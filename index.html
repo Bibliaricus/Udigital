@@ -19,7 +19,34 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias aspernatur, corporis esse iste eius error minus, hic non voluptas earum perferendis, autem facilis minima. Vitae, eaque? Quo rem sint debitis.</p>
+  <header class="container-fluide page-header">
+    <div class="header-top row">
+      <div class="header-top__left col-6 d-flex">
+        <div class="dropdown header-top__language-list">
+          <button class="dropdown-toggle header-top__language-button header-top__language-link lang-en" id="language-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</button>
+          <div class="dropdown-menu" aria-labelledby="language-dropdown-button">
+            <a href="#" class="dropdown-item header-top__language-link lang-en">English</a>
+            <a href="#" class="dropdown-item header-top__language-link lang-fr">French</a>
+            <a href="#" class="dropdown-item header-top__language-link lang-ger">German</a>
+            <a href="#" class="dropdown-item header-top__language-link lang-it">Italian</a>
+            <a href="#" class="dropdown-item header-top__language-link lang-ua">Ukrain</a>
+          </div>
+        </div>
+        <div class="dropdown header-top__currency-list">
+          <button class="dropdown-toggle header-top__currency-button" id="currency-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eur / €</button>
+          <div class="dropdown-menu" aria-labelledby="currency-dropdown-button">
+            <a href="#" class="dropdown-item header-top__currency-link">Eur / €</a>
+            <a href="#" class="dropdown-item header-top__currency-link">Gbp / £</a>
+            <a href="#" class="dropdown-item header-top__currency-link">Chf / ₣</a>
+            <a href="#" class="dropdown-item header-top__currency-link">Jpy / ¥</a>
+          </div>
+        </div>
+        <div class="header-top__number-line">Order online or call us <a href="tel:+1800008808">(+1800) 000 8808</a></div>
+      </div>      
+      <div class="header-top__right col-6"></div>
+      <hr>
+    </div>
+  </header>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -266,8 +266,78 @@ Version: 1.0
       text-transform: uppercase;
     }
 
-    /* 3. Tags settings */
-    img {
-      max-width: 100%;
-      height: auto;
+/* 3. Tags settings */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+/* 4. General styles (general styles for every repeat (and not repeat) element in the site. Not include paddings, margins etc.) */
+
+/* 5. Custom styles */
+
+/* 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section) */
+  /* 6.1. Header */
+    /* 6.1.1. Header-top */
+    .header-top {
+      border-bottom: 1px solid var(--main-gray);
+    }
+    
+    .header-top__left {
+      font-size: 0.75rem;
+      padding-left: 50px;
+    }
+
+    .header-top__number-line {
+      font-size: 0.688rem;
+    }
+    
+    .header-top__language-button,
+    .header-top__currency-button {
+      border: none;
+      background-color: transparent;
+      color: inherit;
+      text-transform: uppercase;
+      border-right: 1px solid var(--main-gray);
+      line-height: 1;
+      padding: 0;
+    }
+
+    .header-top__left .dropdown-item {
+      font-size: 0.75rem;
+      display: flex;
+    }
+
+    .dropdown-item.header-top__language-link::before {
+      content: '';
+      background-image: url('../img/Udigital_flags.png');
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .lang-en::before {
+      background-position-x: 4%;
+    }
+
+    .lang-fr::before {
+      background-position-x: 27%;
+    }
+
+    .lang-ger::before {
+      background-position-x: 51%;
+    }
+
+    .lang-it::before {
+      background-position-x: 75%;
+    }
+
+    .lang-ua::before {
+      background-position-x: 96.2%;
     }
