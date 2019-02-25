@@ -42,3 +42,226 @@ Version: 1.0
   7.6 Max-width: 480px
   7.7 Min-width: 320px and max-width: 400px
 -----------------------------------------------------------------*/
+
+/* 1. Content of external CSS-files */
+
+/* 2. Body, fonts and typography */
+
+  /* Body */
+  :root {
+    --main-gray: #a4a4a4;
+    --main-blue: #12b9f0;
+    --main-red: #e74948;
+  }
+
+  /* Fonts */
+  
+  /* Lato (latin) - 400 (Web-font) */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/lato-v14-latin-regular.woff') format('woff');
+  }
+
+  /* Lato (latin) - 700 (Web-font) */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v14-latin-700.woff2') format('woff2'),
+         url('../fonts/lato-v14-latin-700.woff') format('woff');
+  }
+
+  /* Lato (latin) - 900 (Web-font) */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v14-latin-900.woff2') format('woff2'), 
+         url('../fonts/lato-v14-latin-900.woff') format('woff');
+  }
+
+  /* Open sans (latin) - 400 (Web-font) */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+          url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/open-sans-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* Open sans (latin) - 700 (Web-font) */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+          url('../fonts/open-sans-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/open-sans-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* Icon font */
+  @font-face {
+    font-family: 'Udigital-icon-font';
+    src:  url('fonts/Udigital-icon-font.eot?782qbo');
+    src:  url('fonts/Udigital-icon-font.eot?782qbo#iefix') format('embedded-opentype'),
+      url('fonts/Udigital-icon-font.ttf?782qbo') format('truetype'),
+      url('fonts/Udigital-icon-font.woff?782qbo') format('woff'),
+      url('fonts/Udigital-icon-font.svg?782qbo#Udigital-icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Styles for icon font */
+  [class^="icon-font-"], [class*=" icon-font-"] {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="icon-font-"]::before, [class*=" icon-font-"]::before,
+  [class^="icon-font-"]::after, [class*=" icon-font-"]::after {
+    font-family: 'Udigital-icon-font' !important;
+  }
+  
+  .icon-font-bag:before {
+    content: "\e907";
+  }
+  .icon-font-heart-solid:before {
+    content: "\e900";
+  }
+  .icon-font-right-straight-arrow:before {
+    content: "\e901";
+  }
+  .icon-font-tag-black-shape:before {
+    content: "\e902";
+  }
+  .icon-font-angle-arrow-down:before {
+    content: "\e903";
+  }
+  .icon-font-baseline-today-24px:before {
+    content: "\e904";
+  }
+  .icon-font-star-regular:before {
+    content: "\e905";
+  }
+  .icon-font-star-solid:before {
+    content: "\e906";
+  }
+  .icon-font-angle-left-solid:before {
+    content: "\e908";
+  }
+  .icon-font-angle-right-solid:before {
+    content: "\e909";
+  }
+  .icon-font-caret-down-solid:before {
+    content: "\e90a";
+  }
+  .icon-font-facebook-f-brands:before {
+    content: "\e90b";
+  }
+  .icon-font-google-plus-logo:before {
+    content: "\e90c";
+  }
+  .icon-font-heart-regular:before {
+    content: "\e90d";
+  }
+  .icon-font-search-solid:before {
+    content: "\e90e";
+  }
+  .icon-font-twitter-brands:before {
+    content: "\e90f";
+  }
+  .icon-font-menu:before {
+    content: "\e9bd";
+  }
+  .icon-font-eye:before {
+    content: "\e9ce";
+  }
+  .icon-font-circle-right:before {
+    content: "\ea42";
+  }
+  .icon-font-circle-left:before {
+    content: "\ea44";
+  }
+
+  /* Typography */
+    /* Main font */
+    body {
+      font: 16px/1.6 'Lato', 'Opens Sans', sans-serif;
+      color: #1c1a19;
+    }
+
+    /* Second font */
+    .section-description,
+    .btn, 
+    .promo__description {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Colors - Gray */
+    .header-top__left,
+    .banner__category,
+    .categories-slider__quantity,
+    .section-description,
+    .product-tags__item,
+    .news__date,
+    .news__tags-list {
+      color: #a4a4a4;
+    }
+
+    /* Colors - Blue */
+    .tab--active,
+    .item__price--new {
+      color: #12b9f0;
+    }
+
+    /* Font weight - 900 */
+    .banner__category,
+    .banner__title,
+    .banner__price,
+    .section-title,
+    .sidebar-categories__title,
+    .item__price--new,
+    .promo__sale {
+      font-weight: 900;
+    }
+
+    /* Font weight - 700 */
+    .categories-slider__category, 
+    .item__category,
+    .item__title,
+    .header-top__right,
+    .shopping-cart__price,
+    .item__price--old,
+    .tab,
+    .news__title {
+      font-weight: 700;
+    }
+
+    /* Upper case */
+    .header-top,
+    .banner__category,
+    .banner__title,
+    .btn,
+    .section-title,
+    .tab,
+    .sidebar-categories__title,
+    .sidebar-categories__link,
+    .sidebar-banner__title,
+    .product-tags__title,
+    .item__category,
+    .item__title,
+    .promo__sale,
+    footer {
+      text-transform: uppercase;
+    }
