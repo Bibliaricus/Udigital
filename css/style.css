@@ -1,0 +1,44 @@
+/*
+Site name: Udigital
+Site URL: localhost
+Author: Web-lem
+Author URL: http://web-lem.com
+Description: Udigital - super smart shop.
+Text-domain: udigital
+Version: 1.0
+*/
+
+/*-----------------------------------------------------------------
+[Table of contents] 
+1. Content of external CSS-files
+2. Body, fonts and typography
+3. Tags settings
+4. General styles (general styles for every repeat (and not repeat) element in the site. Not include paddings, margins etc.)
+  4.#. Buttons  
+  4.#. Section titles and descriptions
+  4.#. General styles of product items
+  4.#. Quick popup
+  4.#. Numbers and emails
+  4.#. Social icons line
+  4.#. Slider dots
+  4.#. Titles of widget in sidebar
+  4.#. General styles of product items)
+5. Custom styles
+  5.0. General styles for slick
+  5.1. Main banner slider (SLick)
+  5.2. Slider in quick view popup (Slick) 
+6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section)
+  6.1. Header
+    6.1.1. Header-top
+  6.2. Main
+    6.2.1. Main banner slider
+  6.3. Footer
+7. Responsive - index.html (indicate Responsive in this form for each page)
+  7.1 Min-width: 1200px
+  7.2 Max-width: 1200px
+  7.3 Max-width: 992px
+  7.4 Max-width: 768px
+  7.5 Max-width: 576px
+  7.6 Max-width: 480px
+  7.7 Min-width: 320px and max-width: 400px
+-----------------------------------------------------------------*/
