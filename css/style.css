@@ -30,6 +30,7 @@ Version: 1.0
 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section)
   6.1. Header
     6.1.1. Header-top
+    6.1.2. Header-bottom
   6.2. Main
     6.2.1. Main banner slider
   6.3. Footer
@@ -106,11 +107,11 @@ Version: 1.0
   /* Icon font */
   @font-face {
     font-family: 'Udigital-icon-font';
-    src:  url('fonts/Udigital-icon-font.eot?782qbo');
-    src:  url('fonts/Udigital-icon-font.eot?782qbo#iefix') format('embedded-opentype'),
-      url('fonts/Udigital-icon-font.ttf?782qbo') format('truetype'),
-      url('fonts/Udigital-icon-font.woff?782qbo') format('woff'),
-      url('fonts/Udigital-icon-font.svg?782qbo#Udigital-icon-font') format('svg');
+    src:  url('../fonts/Udigital-icon-font.eot?782qbo');
+    src:  url('../fonts/Udigital-icon-font.eot?782qbo#iefix') format('embedded-opentype'),
+      url('../fonts/Udigital-icon-font.ttf?782qbo') format('truetype'),
+      url('../fonts/Udigital-icon-font.woff?782qbo') format('woff'),
+      url('../fonts/Udigital-icon-font.svg?782qbo#Udigital-icon-font') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -347,4 +348,203 @@ Version: 1.0
     .header-top__navbar {
       font-size: 0.813rem;
       letter-spacing: 0.081rem;
+    }
+
+    /* 6.1.2. Header-bottom */
+      /* Wishlist and shopping cart popups */
+      /* Main styles */
+    .shoping-cart,
+    .vish-list {      
+      position: absolute;
+      right: 0;
+      width: 400px;
+      margin-left: auto;
+      padding: 0 1.5rem 0.5rem;
+      color: #222222;
+      background-color: #ffffff;
+      border: 1px solid #e1e1e1;
+      transition: .3s ease;
+      z-index: 3;
+    } 
+  
+    .shoping-cart a,
+    .vish-list a {
+      text-decoration: none;
+      transition: .2s ease;
+    }
+  
+    .vish-list__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5em 0.7em;
+      text-transform: uppercase;
+    }
+  
+    .shopping-cart__title,    
+    .vish-list__title {
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+  
+    .shopping-cart__item-list,
+    .vish-list__item-list {
+      padding: 10px 0;
+      border-top: none;
+      border-bottom: 1px solid #eaeaea;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+  
+    .shopping-cart__item-list::-webkit-scrollbar,
+    .vish-list__item-list::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 3px;
+    }
+  
+    .shopping-cart__item-list::-webkit-scrollbar-track,
+    .vish-list__item-list::-webkit-scrollbar-track {
+      background-color: #e1e1e1;
+      border-radius: 50px;
+      box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    .shopping-cart__item-list::-webkit-scrollbar-thumb,
+    .vish-list__item-list::-webkit-scrollbar-thumb {
+      background-color: #000000;
+    }
+  
+    .shopping-cart__item,    
+    .vish-list__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 1.5em 3em 1.5em 1.5em;
+    }
+  
+    .shopping-cart__item-image,
+    .vish-list__item-image {
+      float: left;
+      margin: 0 0.5em;
+    }
+  
+    .shopping-cart__item-description,
+    .vish-list__item-description {
+      text-align: left;
+      margin-left: 1em;
+      font-size: 1rem;
+    }
+  
+    .shopping-cart__item-name,
+    .vish-list__item-name {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: inherit;
+    }
+  
+    .shopping-cart__item-delete-btn,
+    .vish-list__item-delete-btn {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      cursor: pointer;
+    }
+  
+    .shopping-cart__footer,    
+    .vish-list__footer {
+      padding: 5px 10px;
+      text-align: center;      
+    }
+  
+    .shopping-cart__checkout-button,
+    .vish-list__vish-list-button {
+      color: #ffffff;
+      background-color: #43a047;
+    }
+    
+    .shopping-cart__btn,
+    .vish-list__btn {
+      display: block;
+      margin: 5px 0;
+      padding: 0.6rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      transition: .2s ease;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .shopping-cart__item-quantity {
+      color: #737373;
+      font-size: 0.9rem;
+    }
+
+    .shopping-cart__item-quantity::after {
+      content: 'x';
+      margin-left: 0.2rem;      
+    }
+
+    .shopping-cart__item-price {
+      color: #737373;
+    }
+
+    .shopping-cart__total-price {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em 0;
+    }
+
+    .shopping-cart__total-quantity {
+      font-size: 1rem;
+    }
+
+    .shopping-cart__subtotal-price {
+      font-size: 1rem;
+    }
+  
+    /* Hover effects */
+    .shopping-cart__item-name:hover,
+    .vish-list__item-name:hover,
+    .shopping-cart__item-name:focus,
+    .vish-list__item-name:focus {
+      text-decoration: underline;
+    }
+  
+    .shopping-cart__checkout-button:hover,
+    .vish-list__vish-list-button:hover,
+    .shopping-cart__checkout-button:focus,
+    .vish-list__vish-list-button:focus {
+      background-color: #000000;
+    }
+  
+    .shopping-cart__btn:hover,
+    .shopping-cart__btn:focus,
+    .vish-list__btn:hover,
+    .vish-list__btn:focus {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+  
+    .header__middle .user-links__icon:focus, 
+    .header__middle .vish-list__btn:focus,
+    .header__middle .shopping-cart__btn:focus {
+      text-decoration: none;
+    }
+
+    /* Mechanism of opening and closing */
+    .shoping-cart,
+    .vish-list {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .vish-list-popup:hover ~ .vish-list,
+    .vish-list-popup:focus ~ .vish-list,
+    .vish-list:hover,
+    .vish-list:focus-within,
+    .shoping-cart-popup:hover ~ .shoping-cart,
+    .shoping-cart-popup:focus ~ .shoping-cart,  
+    .shoping-cart:hover,
+    .shoping-cart:focus-within {
+      visibility: visible !important;
+      opacity: 1 !important;
     }

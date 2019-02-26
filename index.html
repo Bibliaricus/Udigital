@@ -77,10 +77,87 @@
       </div>
       <hr>
     </div>
-    <div class="header-bottom row">
-      <div class="header-bottom__logo"></div>
-      <div class="header-bottom__search"></div>
-      <div class="header-bottom__shop-icons"></div>
+    <div class="header-bottom d-flex justify-content-between py-4">
+      <div class="header-bottom__logo navbar-brand">
+        <img src="img/header-logo.png" alt="Header logo">
+      </div>
+      <div class="header-bottom__search form-group">
+        <form class="form-inline">
+          <input class="search__input form-control" type="search" placeholder="Search for product..." aria-label="Search">
+          <select class="search__select form-control" id="search-select">
+            <option value="all">All categories</option>
+            <option value="notebook">Notebook</option>
+            <option value="tablet">tablet</option>
+            <option value="e-books">Electronic books</option>
+            <option value="computers">Computers</option>
+            <option value="components">Components</option>
+            <option value="office equip">Office equipment</option>
+            <option value="games">games</option>
+            <option value="network equip">Network equipment</option>
+            <option value="accessories">Accessories</option>
+          </select>
+          <button class="search__button btn icon-font-search-solid" type="submit"></button>
+        </div>
+      </form>
+      <div class="header-bottom__icons-list d-flex">
+        <a href="#" class="header-bottom__icon-item icon-font-heart-regular vish-list-popup"></a>
+        <div class="vish-list">
+          <div class="vish-list__header">
+            <span class="vish-list__title">Wishlist</span>
+          </div>
+          <div class="vish-list__item-list">
+            <div class="vish-list__item">
+              <img src="img/product_image-2.jpg" alt="Description of product" class="vish-list__item-image" width="50" height="50">
+              <div class="vish-list__item-description">
+                <a href="#" class="vish-list__item-name">Pure cosmetic</a>
+                <span class="vish-list__item-delete-btn">x</span>
+              </div>
+            </div>              
+          </div>
+          <div class="vish-list__footer">              
+            <a href="#" class="vish-list__vish-list-button vish-list__btn">Viev wishlist</a>
+          </div>
+        </div>
+        <a href="#" class="header-bottom__icon-item icon-font-bag shoping-cart-popup"></a>
+        <div class="shoping-cart">
+          <div class="shopping-cart__item-list">
+            <div class="shopping-cart__item">
+              <img src="img/product_image-2.jpg" alt="Description of product" class="shopping-cart__item-image" width="50" height="50">
+              <div class="shopping-cart__item-description">
+                <a href="#" class="shopping-cart__item-name">Pure cosmetic</a>
+                <span class="shopping-cart__item-quantity">1</span>
+                <span class="shopping-cart__item-price">$199.00</span>
+                <span class="shopping-cart__item-delete-btn">x</span>
+              </div>
+            </div>
+            <div class="shopping-cart__item">
+              <img src="img/product_image-3.jpg" alt="Description of product" class="shopping-cart__item-image" width="50" height="50">
+              <div class="shopping-cart__item-description">
+                <a href="#" class="shopping-cart__item-name">Pure cosmetic</a>
+                <span class="shopping-cart__item-quantity">1</span>
+                <span class="shopping-cart__item-price">$199.00</span>
+                <span class="shopping-cart__item-delete-btn">x</span>
+              </div>
+            </div>
+            <div class="shopping-cart__item">
+              <img src="img/product_image-4.jpg" alt="Description of product" class="shopping-cart__item-image" width="50" height="50">
+              <div class="shopping-cart__item-description">
+                <a href="#" class="shopping-cart__item-name">Pure cosmetic</a>
+                <span class="shopping-cart__item-quantity">1</span>
+                <span class="shopping-cart__item-price">$199.00</span>
+                <span class="shopping-cart__item-delete-btn">x</span>
+              </div>
+            </div>
+          </div>
+          <div class="shopping-cart__footer">
+            <div class="shopping-cart__total-price">
+              <span class="shopping-cart__total-quantity">Shoping cart (<span class="shopping-cart__total-quantity-number">3</span>)</span>
+              <span class="shopping-cart__subtotal-price">Subtotal: £<span class="shopping-cart__subtotal-price-number">523.00</span></span>
+            </div>
+            <a href="#" class="shopping-cart__checkout-button shopping-cart__btn">Checkout</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <script src="js/jquery-3.3.1.min.js"></script>
