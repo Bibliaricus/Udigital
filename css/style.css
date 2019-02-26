@@ -299,27 +299,30 @@ Version: 1.0
     
     .header-top__language-button,
     .header-top__currency-button {
-      border: none;
-      background-color: transparent;
+      height: 20px;
+      padding: 0;
       color: inherit;
       text-transform: uppercase;
-      border-right: 1px solid var(--main-gray);
       line-height: 1;
-      padding: 0;
+      background-color: transparent;
+      border: none;
+      border-right: 1px solid var(--main-gray);
     }
 
     .header-top__left .dropdown-item {
       font-size: 0.75rem;
-      display: flex;
     }
 
-    .dropdown-item.header-top__language-link::before {
+    .dropdown-item.header-top__language-link::before,
+    .header-top__language-button.header-top__language-link::before {
       content: '';
       background-image: url('../img/Udigital_flags.png');
       width: 20px;
       height: 20px;
       display: inline-block;
       margin-right: 5px;
+      background-position-y: 50%;
+      vertical-align: middle;
     }
 
     .lang-en::before {
