@@ -344,3 +344,8 @@ Version: 1.0
     .lang-ua::before {
       background-position-x: 96.2%;
     }
+
+    .header-top__navbar {
+      font-size: 0.813rem;
+      letter-spacing: 0.081rem;
+    }
