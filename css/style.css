@@ -53,7 +53,7 @@ Version: 1.0
     --main-gray: #a4a4a4;
     --main-blue: #12b9f0;
     --main-red: #e74948;
-  }
+  }  
 
   /* Fonts */
   
@@ -278,6 +278,14 @@ Version: 1.0
     text-decoration: none;
   }
 
+  a[href^="tel"] {
+    transition: .2s ease;
+  }
+
+  a[href^="tel"]:hover {
+    color: #000;
+  }
+
 /* 4. General styles (general styles for every repeat (and not repeat) element in the site. Not include paddings, margins etc.) */
 
 /* 5. Custom styles */
@@ -295,6 +303,7 @@ Version: 1.0
 
     .header-top__number-line {
       font-size: 0.688rem;
+      letter-spacing: 0.034rem;
     }
     
     .header-top__language-button,
@@ -307,6 +316,11 @@ Version: 1.0
       background-color: transparent;
       border: none;
       border-right: 1px solid var(--main-gray);
+    }
+
+    .header-top__language-button::after,
+    .header-top__currency-button::after {
+      margin-right: 1.2rem;
     }
 
     .header-top__left .dropdown-item {
@@ -348,6 +362,11 @@ Version: 1.0
     .header-top__navbar {
       font-size: 0.813rem;
       letter-spacing: 0.081rem;
+    }
+
+    .header-top__navbar .nav-link,
+    .header-top__navbar .navbar-text {
+      white-space: nowrap;
     }
 
     /* 6.1.2. Header-bottom */
