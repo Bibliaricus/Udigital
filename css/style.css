@@ -323,7 +323,8 @@ Version: 1.0
 
     .header-top__language-button::after,
     .header-top__currency-button::after {
-      margin-right: 1.2rem;
+      margin-right: 1rem;
+      margin-left: 1rem;  
     }
 
     .header-top__left .dropdown-item {
