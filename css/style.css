@@ -14,7 +14,9 @@ Version: 1.0
 2. Body, fonts and typography
 3. Tags settings
 4. General styles (general styles for every repeat (and not repeat) element in the site. Not include paddings, margins etc.)
-  4.#. Buttons  
+  4.# Text in banners
+  4.# Buttons
+
   4.#. Section titles and descriptions
   4.#. General styles of product items
   4.#. Quick popup
@@ -31,8 +33,8 @@ Version: 1.0
   6.1. Header
     6.1.1. Header-top
     6.1.2. Header-bottom
-  6.2. Main
-    6.2.1. Main banner slider
+  6.2. Top banners
+    6.2.1. Main banner
   6.3. Footer
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -52,6 +54,7 @@ Version: 1.0
   :root {
     --main-gray: #a4a4a4;
     --main-blue: #12b9f0;
+    --second-blue: #b0ebff;
     --main-red: #e74948;
   }  
 
@@ -247,7 +250,8 @@ Version: 1.0
     .tab,
     .news__title,
     .header-bottom__total-price,
-    .shoping-cart-popup::after {
+    .shoping-cart-popup::after,
+    .btn {
       font-weight: 700;
     }
 
@@ -290,7 +294,22 @@ Version: 1.0
   }
 
 /* 4. General styles (general styles for every repeat (and not repeat) element in the site. Not include paddings, margins etc.) */
+  /* 4.# Text in banners */
+  .banner__category {
+    letter-spacing: 0.171rem;
+    font-size: 0.875rem;
+    color: #a4a4a4;
+  }
 
+  /* 4.# Buttons */
+  .custom-btn {
+    font-size: 0.875rem;
+    letter-spacing: 0.131rem;
+    background-color: #1c1a19;
+    color: #fff;
+    border-radius: 0;
+    padding: 0.6rem 1rem 0.8rem;
+  }
 /* 5. Custom styles */
 
 /* 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section) */
@@ -643,4 +662,25 @@ Version: 1.0
       align-items: center;
       color: #ffffff;
       font-size: 0.875rem;      
+    }
+
+  /* 6.2. Top banners */
+    /* 6.2.1. Main banner */
+    .top-banners__main-banner-slider {
+      background-color: var(--main-blue);
+    }
+
+    .main-banner__slide {
+      padding: 4rem 0rem 3rem;
+    }
+    
+    .main-banner__category,
+    .main-banner__description {
+      color: var(--second-blue);
+    }
+
+    .main-banner__title {
+      color: #ffffff;
+      font-size: 5rem;
+      letter-spacing: 0.1rem;
     }
