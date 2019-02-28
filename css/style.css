@@ -310,6 +310,12 @@ Version: 1.0
     border-radius: 0;
     padding: 0.6rem 1rem 0.8rem;
   }
+
+  .custom-btn:hover,
+  .custom-btn:focus {
+    background-color: #ffffff;
+    color: inherit;
+  }
 /* 5. Custom styles */
 
 /* 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section) */
