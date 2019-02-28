@@ -678,7 +678,14 @@ Version: 1.0
 
     .main-banner__slide {
       padding: 4rem 0rem 3rem;
+      /* display: flex;
+      align-items: center; */
     }
+
+    .main-banner__text {
+      width: 45%;
+      vertical-align: middle;
+    } 
     
     .main-banner__category,
     .main-banner__description {
