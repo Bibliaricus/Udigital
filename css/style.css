@@ -480,8 +480,8 @@ Version: 1.0
     
       .shopping-cart__checkout-button,
       .vish-list__vish-list-button {
-        color: #ffffff;
-        background-color: #43a047;
+        color: #1c1a19;
+        border: 1px solid #1c1a19;
       }
       
       .shopping-cart__btn,
@@ -537,6 +537,7 @@ Version: 1.0
       .shopping-cart__checkout-button:focus,
       .vish-list__vish-list-button:focus {
         background-color: #000000;
+        color: #ffffff;
       }
     
       .shopping-cart__btn:hover,
