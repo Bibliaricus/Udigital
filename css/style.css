@@ -16,6 +16,7 @@ Version: 1.0
 4. General styles (general styles for every repeat (and not repeat) element in the site. Not include paddings, margins etc.)
   4.# Text in banners
   4.# Buttons
+  4.#. General styles of product items
 
   4.#. Section titles and descriptions
   4.#. General styles of product items
@@ -24,7 +25,6 @@ Version: 1.0
   4.#. Social icons line
   4.#. Slider dots
   4.#. Titles of widget in sidebar
-  4.#. General styles of product items)
 5. Custom styles
   5.0. General styles for slick
   5.1. Main banner slider (SLick)
@@ -35,6 +35,7 @@ Version: 1.0
     6.1.2. Header-bottom
   6.2. Top banners
     6.2.1. Main banner
+    6.2.2. Second banners
   6.3. Footer
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -316,6 +317,9 @@ Version: 1.0
     background-color: #ffffff;
     color: inherit;
   }
+
+  /* 4.#. General styles of product items */
+  
 /* 5. Custom styles */
 
 /* 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section) */
@@ -725,4 +729,10 @@ Version: 1.0
 
     .main-banner__dot-list {
       bottom: 2%;
+    }
+
+    /* 6.2.2. Second banners */
+    .second-banner__title {
+      font-size: 1.875rem;
+      letter-spacing: 0.038rem;
     }
