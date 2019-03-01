@@ -678,8 +678,6 @@ Version: 1.0
 
     .main-banner__slide {
       padding: 4rem 0rem 3rem;
-      /* display: flex;
-      align-items: center; */
     }
 
     .main-banner__text {
@@ -696,4 +694,34 @@ Version: 1.0
       color: #ffffff;
       font-size: 5rem;
       letter-spacing: 0.1rem;
+    }
+
+    .main-banner__arrow-side {
+      opacity: 1;
+    }
+
+    .main-banner__arrow {
+      position: absolute;      
+    }
+
+    .carousel-control-prev-icon.main-banner__arrow {
+      left: 5%;
+    }
+
+    .carousel-control-prev-icon.main-banner__arrow {
+      right: 5%;
+    }
+
+    li.main-banner__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .main-banner__dot.active {
+      transform: scale(1.2);
+    }
+
+    .main-banner__dot-list {
+      bottom: 2%;
     }

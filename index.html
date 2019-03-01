@@ -164,6 +164,13 @@
   <div class="top-banners container-fluid p-0">
     <div class="row no-gutters">
       <div class="top-banners__main-banner-slider col-7 carousel slide" id="main-banner-slider" data-ride="carousel">
+        <!-- Slider dots -->
+        <ol class="carousel-indicators main-banner__dot-list">
+          <li class="main-banner__dot" data-target="#main-banner-slider" data-slide-to="0" class="active"></li>
+          <li class="main-banner__dot" data-target="#main-banner-slider" data-slide-to="1"></li>
+          <li class="main-banner__dot" data-target="#main-banner-slider" data-slide-to="2"></li>
+          <li class="main-banner__dot" data-target="#main-banner-slider" data-slide-to="3"></li>
+        </ol>
         <div class="carousel-inner">
           <!-- Copy this slide 4 times  -->
           <div class="main-banner__slide carousel-item active ml-4">
@@ -205,14 +212,14 @@
           <!-- End slide -->
         </div>
         <!-- Slider controls -->
-        <!-- <a class="carousel-control-prev" href="#main-banner-slider" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <a class="carousel-control-prev main-banner__arrow-side" href="#main-banner-slider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon main-banner__arrow" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#main-banner-slider" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <a class="carousel-control-next main-banner__arrow-side" href="#main-banner-slider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon main-banner__arrow" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a> -->
+        </a>
       </div>
       <div class="top-banners__second-banners col-5">
         <div class="top-banners__second-banner-item top-banners__second-banner-item--top">
