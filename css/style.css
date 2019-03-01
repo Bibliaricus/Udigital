@@ -18,17 +18,14 @@ Version: 1.0
   4.# Buttons
   4.#. General styles of product items
 
-  4.#. Section titles and descriptions
-  4.#. General styles of product items
+  4.#. Section titles and descriptions  
   4.#. Quick popup
   4.#. Numbers and emails
   4.#. Social icons line
   4.#. Slider dots
   4.#. Titles of widget in sidebar
 5. Custom styles
-  5.0. General styles for slick
-  5.1. Main banner slider (SLick)
-  5.2. Slider in quick view popup (Slick) 
+  5.1. Active slide in category slider (Bootstrap slider) 
 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section)
   6.1. Header
     6.1.1. Header-top
@@ -36,6 +33,7 @@ Version: 1.0
   6.2. Top banners
     6.2.1. Main banner
     6.2.2. Second banners
+  6.3. Categories
   6.3. Footer
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -237,7 +235,8 @@ Version: 1.0
     .section-title,
     .sidebar-categories__title,
     .item__price--new,
-    .promo__sale {
+    .promo__sale,
+    .categories__title {
       font-weight: 900;
     }
 
@@ -271,7 +270,8 @@ Version: 1.0
     .item__title,
     .promo__sale,
     footer,
-    .header-bottom__total-price {
+    .header-bottom__total-price,
+    .categories__title {
       text-transform: uppercase;
     }
 
@@ -320,8 +320,17 @@ Version: 1.0
   }
 
   /* 4.#. General styles of product items */
+  .item__category {
+    color: #a4a4a4;
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+  }
   
 /* 5. Custom styles */
+  /* 5.1. Active slide in category slider (Bootstrap slider) */
+  .categories .carousel-item.active {
+    display: flex;
+  }
 
 /* 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section) */
   /* 6.1. Header */
@@ -751,3 +760,9 @@ Version: 1.0
       font-size: 1.875rem;
       letter-spacing: 0.038rem;
     }
+
+  /* 6.3. Categories */
+  .categories__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+  }
