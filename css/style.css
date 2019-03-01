@@ -694,6 +694,7 @@ Version: 1.0
       color: #ffffff;
       font-size: 5rem;
       letter-spacing: 0.1rem;
+      word-break: break-all;
     }
 
     .main-banner__arrow-side {
