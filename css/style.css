@@ -316,6 +316,7 @@ Version: 1.0
   .custom-btn:focus {
     background-color: #ffffff;
     color: inherit;
+    border: 1px solid #1c1a19;
   }
 
   /* 4.#. General styles of product items */
@@ -699,6 +700,10 @@ Version: 1.0
       font-size: 5rem;
       letter-spacing: 0.1rem;
       word-break: break-all;
+    }
+
+    .main-banner__btn:hover {
+      border: none;
     }
 
     .main-banner__arrow-side {
