@@ -737,6 +737,16 @@ Version: 1.0
     }
 
     /* 6.2.2. Second banners */
+    .top-banners__second-banners {
+      overflow: hidden;
+    }
+    
+    .top-banners__second-banner {
+      border: 1px solid #a4a4a4;
+      margin-bottom: -1px;
+      padding-bottom: 1px;
+    }
+    
     .second-banner__title {
       font-size: 1.875rem;
       letter-spacing: 0.038rem;
