@@ -685,6 +685,10 @@ Version: 1.0
     }
 
   /* 6.2. Top banners */
+    .top-banners {
+      margin-bottom: 7.3rem;
+    }
+    
     /* 6.2.1. Main banner */
     .top-banners__main-banner-slider {
       background-color: var(--main-blue);
@@ -762,29 +766,6 @@ Version: 1.0
     }
 
   /* 6.3. Categories */
-  /* .categories__item {
-    background-repeat: no-repeat;
-    background-position: 67px 200px;
-    background-size: 148%;
-    min-height: 38rem;
-  }
-  
-  .categories__item:nth-child(1) {
-    background-image: url('../img/category-1.jpg');
-  }
-
-  .categories__item:nth-child(2) {
-    background-image: url('../img/category-2.jpg');
-  }
-
-  .categories__item:nth-child(3) {
-    background-image: url('../img/category-3.jpg');
-  }
-
-  .categories__item:nth-child(4) {
-    background-image: url('../img/category-4-1.jpg');
-  } */
-  
   .categories__title {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
