@@ -339,6 +339,14 @@ Version: 1.0
     display: flex;
   }
 
+  /* It's absolute kludge for same width borders in categories*/
+  .categories .draggable {
+    border-left: 1px solid var(--main-gray);
+    border-right: 1px solid var(--main-gray);
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+
   .categories .slick-arrow {
     font-size: 0;
     border: none;
@@ -810,11 +818,8 @@ Version: 1.0
 
   .categories__item {
     border-left: 1px solid var(--main-gray);  
-  }
-
-  .categories__item:last-child {
     border-right: 1px solid var(--main-gray);
-  }
+  }  
   
   .categories__title {
     font-size: 1.5rem;
