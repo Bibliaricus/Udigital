@@ -132,7 +132,8 @@ Version: 1.0
   }
   
   [class^="icon-font-"]::before, [class*=" icon-font-"]::before,
-  [class^="icon-font-"]::after, [class*=" icon-font-"]::after {
+  [class^="icon-font-"]::after, [class*=" icon-font-"]::after,
+  .slick-prev::before, .slick-next::before {
     font-family: 'Udigital-icon-font' !important;
     line-height: 1;
   }
@@ -336,6 +337,37 @@ Version: 1.0
   /* 5.2. Slick slider in categories */
   .categories .slick-track {
     display: flex;
+  }
+
+  .categories .slick-arrow {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    width: 7%;
+    height: 25%;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+
+  .categories .slick-prev {
+    left: 3%;
+  }
+
+  .categories .slick-next {
+    right: 3%;
+  }
+
+  .categories .slick-prev::before {
+    content: "\e908";
+    font-size: 2.8125rem;
+  }
+
+  .categories .slick-next::before {
+    content: "\e909";
+    font-size: 2.8125rem;
   }
 
 /* 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section) */
