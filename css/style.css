@@ -26,6 +26,7 @@ Version: 1.0
   4.#. Titles of widget in sidebar
 5. Custom styles
   5.1. Active slide in category slider (Bootstrap slider) 
+  5.2. Slick slider in categories
 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section)
   6.1. Header
     6.1.1. Header-top
@@ -329,6 +330,11 @@ Version: 1.0
 /* 5. Custom styles */
   /* 5.1. Active slide in category slider (Bootstrap slider) */
   .categories .carousel-item.active {
+    display: flex;
+  }
+
+  /* 5.2. Slick slider in categories */
+  .categories .slick-track {
     display: flex;
   }
 
