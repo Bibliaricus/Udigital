@@ -766,6 +766,18 @@ Version: 1.0
     }
 
   /* 6.3. Categories */
+  .categories.container {
+    max-width: 1170px;
+  }
+
+  .categories__item {
+    border-left: 1px solid var(--main-gray);  
+  }
+
+  .categories__item:last-child {
+    border-right: 1px solid var(--main-gray);
+  }
+  
   .categories__title {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
