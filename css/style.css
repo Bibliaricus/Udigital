@@ -254,7 +254,8 @@ Version: 1.0
     .news__title,
     .header-bottom__total-price,
     .shoping-cart-popup::after,
-    .btn {
+    .btn,
+    .prod-categories__tab {
       font-weight: 700;
     }
 
@@ -274,7 +275,8 @@ Version: 1.0
     .promo__sale,
     footer,
     .header-bottom__total-price,
-    .categories__title {
+    .categories__title,
+    .prod-categories__tab {
       text-transform: uppercase;
     }
 
