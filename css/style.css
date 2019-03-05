@@ -339,13 +339,13 @@ Version: 1.0
     display: flex;
   }
 
-  /* It's absolute kludge for same width borders in categories*/
-  .categories .draggable {
-    border-left: 1px solid var(--main-gray);
-    border-right: 1px solid var(--main-gray);
-    margin-left: -1px;
-    margin-right: -1px;
-  }
+    /* It's absolute kludge for same width borders in categories*/
+    .categories .draggable {
+      border-left: 1px solid var(--main-gray);
+      border-right: 1px solid var(--main-gray);
+      margin-left: -1px;
+      margin-right: -1px;
+    }
 
   .categories .slick-arrow {
     font-size: 0;
@@ -358,6 +358,7 @@ Version: 1.0
     height: 25%;
     z-index: 10;
     transform: translateY(-50%);
+    outline: none;
   }
   
   .categories .slick-arrow::before {
@@ -846,6 +847,7 @@ Version: 1.0
     transform: scale(1.1);
   }
 
-  .categories .slick-arrow:hover::before {
+  .categories .slick-arrow:hover::before,
+  .categories .slick-arrow:focus::before {
     color: var(--main-blue);
   }
