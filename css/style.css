@@ -837,6 +837,10 @@ Version: 1.0
     }
 
   /* 6.3. Categories */
+  .categories {
+    margin-bottom: 7.6rem;
+  }
+  
   .categories__item {
     border-left: 1px solid var(--main-gray);  
     border-right: 1px solid var(--main-gray);
