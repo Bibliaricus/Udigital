@@ -17,14 +17,15 @@ Version: 1.0
   4.# Text in banners
   4.# Buttons
   4.#. General styles of product items
+  4.#. Section titles and descriptions
 
-  4.#. Section titles and descriptions  
   4.#. Quick popup
   4.#. Numbers and emails
   4.#. Social icons line
   4.#. Slider dots
   4.#. Titles of widget in sidebar
 5. Custom styles
+  5.0. Custom containters (Bootstrap 4)
   5.1. Active slide in category slider (Bootstrap slider) 
   5.2. Slick slider in categories
 6. Sections of page - index.html (styles of positioning elements in each specific section in the page) (firs nesting lvl. - section of page; second nesting lvl. - blocks in said section)
@@ -327,8 +328,27 @@ Version: 1.0
     font-size: 0.75rem;
     letter-spacing: 0.15rem;
   }
+
+  /* 4.#. Section titles and descriptions */
+  /* .section-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .section-description {
+    font-size: 0.938rem;
+  } */
   
 /* 5. Custom styles */
+  /* 5.0. Custom containters (Bootstrap 4) */
+  .categories.container {
+    max-width: 1170px;
+  }
+
+  main.container {
+    max-width: 1200px;
+  }
+
   /* 5.1. Active slide in category slider (Bootstrap slider) */
   .categories .carousel-item.active {
     display: flex;
@@ -817,10 +837,6 @@ Version: 1.0
     }
 
   /* 6.3. Categories */
-  .categories.container {
-    max-width: 1170px;
-  }
-
   .categories__item {
     border-left: 1px solid var(--main-gray);  
     border-right: 1px solid var(--main-gray);
