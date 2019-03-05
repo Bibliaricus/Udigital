@@ -825,6 +825,7 @@ Version: 1.0
     border-left: 1px solid var(--main-gray);  
     border-right: 1px solid var(--main-gray);
     overflow: hidden;
+    word-break: break-all;
   }  
   
   .categories__title {
