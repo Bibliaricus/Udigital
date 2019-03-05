@@ -36,7 +36,11 @@ Version: 1.0
     6.2.1. Main banner
     6.2.2. Second banners
   6.3. Categories
-  6.3. Footer
+  6.4. Main
+    6.4.1. Sidebar
+    6.4.2. Content
+      6.4.2.1. Product categories
+  
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
   7.2 Max-width: 1200px
@@ -874,3 +878,11 @@ Version: 1.0
   .categories .slick-arrow:focus::before {
     color: var(--main-blue);
   }
+
+  /* 6.4. Main */
+    /* 6.4.2. Content */
+      /* 6.4.2.1. Product categories */
+      .prod-categories__tab.active {
+        color: var(--main-blue);
+        border-bottom: 2px solid var(--main-blue);
+      }
