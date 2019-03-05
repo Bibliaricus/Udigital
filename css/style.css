@@ -353,6 +353,7 @@ Version: 1.0
 
   main.container {
     max-width: 1200px;
+    word-break: break-all;
   }
 
   /* 5.1. Active slide in category slider (Bootstrap slider) */
@@ -885,4 +886,8 @@ Version: 1.0
       .prod-categories__tab.active {
         color: var(--main-blue);
         border-bottom: 2px solid var(--main-blue);
+      }
+      
+      .prod-categories__tab {
+        max-width: 29%;
       }
