@@ -330,14 +330,14 @@ Version: 1.0
   }
 
   /* 4.#. Section titles and descriptions */
-  /* .section-title {
+  .section-title {
     font-size: 2.5rem;
     letter-spacing: 0.05rem;
   }
 
   .section-description {
     font-size: 0.938rem;
-  } */
+  }
   
 /* 5. Custom styles */
   /* 5.0. Custom containters (Bootstrap 4) */
