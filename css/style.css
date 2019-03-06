@@ -191,17 +191,11 @@ Version: 1.0
   .icon-font-twitter-brands:before {
     content: "\e90f";
   }
-  .icon-font-menu:before {
-    content: "\e9bd";
-  }
   .icon-font-eye:before {
     content: "\e9ce";
   }
-  .icon-font-circle-right:before {
-    content: "\ea42";
-  }
-  .icon-font-circle-left:before {
-    content: "\ea44";
+  .icon-font-cart:before {
+    content: "\e93a";
   }
 
   /* Typography */
