@@ -259,7 +259,8 @@ Version: 1.0
     .header-bottom__total-price,
     .shoping-cart-popup::after,
     .btn,
-    .prod-categories__tab {
+    .prod-categories__tab,
+    .prod-categories__title {
       font-weight: 700;
     }
 
@@ -891,3 +892,49 @@ Version: 1.0
       .prod-categories__tab {
         max-width: 29%;
       }
+
+      #categories-tabs {
+        margin-bottom: 3.9rem;
+      }
+
+      .prod-categories__title {
+        letter-spacing: 0.02rem;
+      }
+
+      .prod-categories .item__price {
+        font-size: 0.75rem;  
+      }
+
+      /* For mind notes */
+
+      .tab-content>.active {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .prod-categories .item__price-list {
+      line-height: 1;
+    }
+
+    .prod-categories__item {
+      border: 1px solid var(--main-gray);
+      padding-bottom: 1.1rem;
+      margin-left: -1px;
+    }
+
+    /* .prod-categories__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 2.8rem;
+    }
+
+    .item__price-list,
+    .prod-categories .item__price  {
+      line-height: 1.2;
+    }
+
+    .prod-categories__title {
+      margin-top: 1.45rem;
+    } */
