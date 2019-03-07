@@ -911,7 +911,39 @@ Version: 1.0
       }
 
       .prod-categories__item {
+        position: relative;
         border: 1px solid var(--main-gray);
         padding-bottom: 1.1rem;
         margin-left: -1px;
-      }    
+      }
+
+      .prod-categories__hover-buttons {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;        
+      }     
+
+      .hover-buttons__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #1c1a19;
+        color: #fff;
+        border-radius: 50%;
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: .3s ease;
+      }
+
+      .prod-categories__img:hover ~ .prod-categories__hover-buttons .hover-buttons__item,
+      .prod-categories__img:focus ~ .prod-categories__hover-buttons .hover-buttons__item,
+      .hover-buttons__item:hover,
+      .hover-buttons__item:focus {
+        opacity: 1;
+        transform: translateY(0);
+      }
