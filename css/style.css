@@ -1093,7 +1093,7 @@ Version: 1.0
         transform: translateY(-50%);
         opacity: 0;
         transition: .3s ease;
-      }     
+      }
 
       .hover-buttons__item {
         display: flex;
