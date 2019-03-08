@@ -27,9 +27,9 @@ $(document).ready(function(){
   })();
 
   //  Slider in quick view popup (slick slider)
-  $('.q-view-popup__image-slider').slick({
-    arrows: true,
-    dots: true
-  });
-  
+  // $('.q-view-popup__image-slider').slick({
+  //   arrows: true,
+  //   dots: true
+  // });
+
 });

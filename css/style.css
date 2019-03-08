@@ -364,15 +364,9 @@ Version: 1.0
     /* For modal window by Bootstrap 4 */
     .modal-dialog {
       justify-content: center;
-    }
+    }  
 
-  .q-view-popup__image-slider {
-    display: flex;
-    align-items: center;
-  }
-
-  .q-view-popup__slide {
-    width: 100%;
+  .q-view__slide {
     text-align: center;
   }
 
@@ -484,6 +478,29 @@ Version: 1.0
     right: 5%;
     top: -10%;
   }
+
+  .q-view__dot-list {
+    bottom: -15%;
+  }
+
+  li.q-view__dot {
+    background-color: var(--main-blue);
+  }
+
+  .q-view__arrow {
+    border-radius: 50%;
+    background-color: #000000;
+  }
+
+  .carousel-control-prev-icon.q-view__arrow {
+    left: 50%;
+    box-shadow: 1px 0 0 5px #000;
+  }
+
+  .carousel-control-next-icon.q-view__arrow {
+    right: 50%;
+    box-shadow: -1px 0 0 5px #000;
+  }
   
 /* 5. Custom styles */
   /* 5.0. Custom containters (Bootstrap 4) */
@@ -514,8 +531,7 @@ Version: 1.0
       margin-right: -1px;
     }
 
-  .categories .slick-arrow,
-  .q-view-popup .slick-arrow {
+  .categories .slick-arrow {
     font-size: 0;
     border: none;
     padding: 0;
@@ -529,23 +545,19 @@ Version: 1.0
     outline: none;
   }
   
-  .categories .slick-arrow::before,
-  .q-view-popup .slick-arrow::before {
+  .categories .slick-arrow::before {
     transition: .3s ease;
   }
 
-  .categories .slick-prev,
-  .q-view-popup .slick-prev {
+  .categories .slick-prev {
     left: 3%;
   }
 
-  .categories .slick-next,
-  .q-view-popup .slick-next {
+  .categories .slick-next {
     right: 3%;
   }
 
-  .categories .slick-prev::before,
-  .q-view-popup .slick-prev::before {
+  .categories .slick-prev::before {
     content: "\e908";
     font-size: 2.8125rem;
   }
@@ -557,50 +569,9 @@ Version: 1.0
   }
 
   .categories .slick-arrow:hover::before,
-  .categories .slick-arrow:focus::before,
-  .q-view-popup .slick-arrow:hover::before,
-  .q-view-popup .slick-arrow:focus::before {
+  .categories .slick-arrow:focus::before {
     color: var(--main-blue);
-  }
-
-  .q-view-popup .slick-dots {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    transform: translateX(-50%);
-  }
-
-  .q-view-popup .slick-dots button {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
-    background-color: var(--main-blue);
-    transition: .3s ease;
-    opacity: .5;
-    outline: none;
-  }
-
-  .q-view-popup .slick-dots button:hover,
-  .q-view-popup .slick-dots button:focus,
-  .q-view-popup .slick-active button {
-    transform: scale(1.3);
   }  
-
-  .q-view-popup .slick-active button {
-    transform: scale(1.3);
-    opacity: 1;
-  }
 
   /* 5.3. Tabs in product categories (reassignment Bootstrap 4 tabs properties) */
   .prod-categories .tab-content>.active {
@@ -999,7 +970,8 @@ Version: 1.0
       opacity: 1;
     }
 
-    .main-banner__arrow {
+    .main-banner__arrow,
+    .q-view__arrow {
       position: absolute;      
     }
 
@@ -1011,13 +983,15 @@ Version: 1.0
       right: 5%;
     }
 
-    li.main-banner__dot {
+    li.main-banner__dot,
+    li.q-view__dot {
       width: 8px;
       height: 8px;
       border-radius: 50%;
     }
 
-    .main-banner__dot.active {
+    .main-banner__dot.active,
+    .q-view__dot.active {
       transform: scale(1.2);
     }
 

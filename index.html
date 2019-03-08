@@ -24,13 +24,28 @@
   <div class="modal fade" id="q-view-popup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="q-view-popup modal-content row">
-        <div class="q-view-popup__image-slider col-sm-6">
-          <div class="q-view-popup__slide">
-            <img src="img/prod_categor-6.jpg" alt="Name or description of product in popup">
+        <div class="q-view-popup__image-slider carousel slide col-sm-6" id="q-view-slider" data-ride="carousel">
+          <!-- Slider dots -->
+          <ol class="carousel-indicators q-view__dot-list">
+            <li class="q-view__dot active" data-target="#q-view-slider" data-slide-to="0"></li>
+            <li class="q-view__dot" data-target="#q-view-slider" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="q-view__slide carousel-item active">
+              <img src="img/prod_categor-6.jpg" alt="Name or description of product in popup">
+            </div>
+            <div class="q-view__slide carousel-item">
+              <img src="img/prod_categor-7.jpg" alt="Name of description of product in popup">
+            </div>
           </div>
-          <div class="q-view-popup__slide">
-            <img src="img/prod_categor-7.jpg" alt="Name of description of product in popup">
-          </div>
+          <a class="carousel-control-prev main-banner__arrow-side" href="#q-view-slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon q-view__arrow" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next main-banner__arrow-side" href="#q-view-slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon q-view__arrow" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
         <div class="q-view-popup__information col-sm-6">
           <h3 class="q-view-popup__title"><a href="#">Product name</a></h3>
