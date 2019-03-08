@@ -1113,6 +1113,7 @@ Version: 1.0
         color: #1c1a19;
         text-decoration: none;
         background-color: #fff;
+        outline: none;
       }
 
       .prod-categories__img:hover ~ .prod-categories__hover-buttons,
