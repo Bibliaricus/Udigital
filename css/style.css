@@ -352,13 +352,19 @@ Version: 1.0
   /* 4.#. Quick popup */
   .q-view-popup {
     position: absolute;
-    width: 100%;
+    width: 120%;
     height: auto;
+    flex-direction: row;
     padding: 2.5em 0em;
     background-color: #ffffff;
     border: 1px solid #e1e1e1;;
     z-index: 3;
   }
+
+    /* For modal window by Bootstrap 4 */
+    .modal-dialog {
+      justify-content: center;
+    }
 
   .q-view-popup__image-slider {
     display: flex;
@@ -471,6 +477,12 @@ Version: 1.0
   .q-view-popup__slide img {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .q-view-popup .close {
+    position: absolute;
+    right: 5%;
+    top: -10%;
   }
   
 /* 5. Custom styles */
