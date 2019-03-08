@@ -18,8 +18,8 @@ Version: 1.0
   4.# Buttons
   4.#. General styles of product items
   4.#. Section titles and descriptions
-
   4.#. Quick popup
+
   4.#. Numbers and emails
   4.#. Social icons line
   4.#. Slider dots
@@ -331,6 +331,14 @@ Version: 1.0
     letter-spacing: 0.15rem;
   }
 
+  .icon-font-star-solid {
+    color: #e74948;
+  }
+
+  .icon-font-star-regular {
+    color: #a4a4a4;
+  }
+
   /* 4.#. Section titles and descriptions */
   .section-title {
     font-size: 2.5rem;
@@ -339,6 +347,125 @@ Version: 1.0
 
   .section-description {
     font-size: 0.938rem;
+  }
+
+  /* 4.#. Quick popup */
+  .q-view-popup {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 2.5em 0em;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;;
+    z-index: 3;
+  }
+
+  .q-view-popup__image-slider {
+    display: flex;
+    align-items: center;
+  }
+
+  .q-view-popup__slide {
+    width: 100%;
+    text-align: center;
+  }
+
+  .q-view-popup__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  .q-view-popup__title:hover {
+    color: #43a047;
+  }
+
+  .q-view-popup__title a:focus,
+  .q-view-popup__link:focus,
+  .q-view-popup__full-info-link:focus {
+    background-color: lightgrey;
+  }
+
+  .q-view-popup__price {
+    color: #888888;
+    font-size: 1.25rem;
+  }
+
+  .q-view-popup__rating {
+    margin: 1rem 0;
+    font-size: 14px;
+    margin-top: 0.2rem;
+  }
+
+  .q-view-popup__quantity {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .quantity__minus,
+  .quantity__plus {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #e1e1e1;;
+    cursor: pointer;
+  }
+
+  .quantity__number-input::-webkit-inner-spin-button,
+  .quantity__number-input::-webkit-outer-spin-button {   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .quantity__number-input {
+    width: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #e1e1e1;;
+    border-bottom: 1px solid #e1e1e1;;
+    -moz-appearance: none;
+  }
+
+  .q-view-popup__btn {
+    margin-left: 2em;
+    display: inline-block;
+    padding: 1em 2.7em 0.8em 2.5em;
+    font-size: 0.75rem;
+    background-color: var(--green);
+    color: #ffffff;
+    border: none;
+    transition: .3s ease;
+    cursor: pointer;
+  }
+  .q-view-popup__btn:hover,
+  .q-view-popup__btn:focus {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .q-view-popup__link {
+    color: #888888;
+    border-bottom: 1px dashed #e1e1e1;;
+    margin-left: 0.5em;
+  }
+
+  .q-view-popup__link:hover,
+  .q-view-popup__link:focus {
+    color: #222222;
+  }
+
+  .q-view-popup__tags {
+    margin-bottom: 1rem;
+  }
+
+  .q-view-popup__full-info-link {
+    text-decoration: underline;
+  }
+
+  .q-view-popup__full-info-link:hover, 
+  .q-view-popup__full-info-link:focus {
+    opacity: 0.6;
   }
   
 /* 5. Custom styles */
