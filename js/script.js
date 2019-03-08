@@ -25,4 +25,11 @@ $(document).ready(function(){
       $quantityNum.val(+$quantityNum.val() + 1);
     }
   })();
+
+  //  Slider in quick view popup (slick slider)
+  $('.q-view-popup__image-slider').slick({
+    arrows: true,
+    dots: true
+  });
+  
 });
