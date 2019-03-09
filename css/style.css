@@ -514,6 +514,19 @@ Version: 1.0
   }
 
   /* 4.#. Hover buttons */
+  .hover-buttons__list {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;  
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: .3s ease;
+    pointer-events: none;
+  }
+  
   .hover-buttons__item {
     display: flex;
     justify-content: center;
@@ -524,7 +537,7 @@ Version: 1.0
     color: #fff;
     border-radius: 50%;
     border: 1px solid #1c1a19;
-    transition: .3s ease;
+    transition: .3s ease;    
   }
 
   .hover-buttons__item:hover,
@@ -532,23 +545,20 @@ Version: 1.0
     color: #1c1a19;
     text-decoration: none;
     background-color: #fff;
-    outline: none;
+    outline: none;    
   }
 
-  .prod-categories__img:hover ~ .prod-categories__hover-buttons,
-  .prod-categories__img:focus ~ .prod-categories__hover-buttons,
-  .prod-categories__hover-buttons:hover,
-  .prod-categories__hover-buttons:focus-within,
+  .prod-categories__img:hover ~ .hover-buttons__list,
+  .prod-categories__img:focus ~ .hover-buttons__list,
+  .hov-btn-call:hover ~ .hover-buttons__list,
+  .hov-btn-call:focus ~ .hover-buttons__list,
+  .hover-buttons__list:hover,
+  .hover-buttons__list:focus-within,
   .hover-buttons__item:hover {
     opacity: 1;
     transform: translateY(0);
-  }
-
-  .prod-categories__title:hover,
-  .prod-categories__title:focus {
-    color: var(--main-blue);
-    text-decoration: none;
-  }
+    pointer-events: auto;
+  }  
   
 /* 5. Custom styles */
   /* 5.0. Custom containters (Bootstrap 4) */
@@ -1135,16 +1145,10 @@ Version: 1.0
         margin-left: -1px;
       }
 
-      .prod-categories__hover-buttons {
-        position: absolute;
-        top: 25%;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-around;  
-        transform: translateY(-50%);
-        opacity: 0;
-        transition: .3s ease;
+      .prod-categories__title:hover,
+      .prod-categories__title:focus {
+        color: var(--main-blue);
+        text-decoration: none;
       }
 
       /* 6.4.2.2. Popular products */
@@ -1164,4 +1168,8 @@ Version: 1.0
         text-align: center;
           /* Kludge. Remove after added correct-size image to product item */
           padding: 3.7rem 0;
+      }
+
+      .popular-prods .hover-buttons__list {
+        padding: 0 1.5rem;
       }
