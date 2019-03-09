@@ -19,6 +19,7 @@ Version: 1.0
   4.#. General styles of product items
   4.#. Section titles and descriptions
   4.#. Quick popup
+  4.#. Hover buttons
 
   4.#. Numbers and emails
   4.#. Social icons line
@@ -41,6 +42,7 @@ Version: 1.0
     6.4.1. Sidebar
     6.4.2. Content
       6.4.2.1. Product categories
+      6.4.2.2. Popular products
   
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -331,12 +333,21 @@ Version: 1.0
     letter-spacing: 0.15rem;
   }
 
+  .item__title {
+    color: #1c1a19;
+    letter-spacing: 0.02rem;
+  }
+
   .icon-font-star-solid {
     color: #e74948;
   }
 
   .icon-font-star-regular {
     color: #a4a4a4;
+  }
+
+  .item__rating {
+    font-size: 0.8rem;
   }
 
   /* 4.#. Section titles and descriptions */
@@ -500,6 +511,43 @@ Version: 1.0
   .carousel-control-next-icon.q-view__arrow {
     right: 50%;
     box-shadow: -1px 0 0 5px #000;
+  }
+
+  /* 4.#. Hover buttons */
+  .hover-buttons__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1c1a19;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #1c1a19;
+    transition: .3s ease;
+  }
+
+  .hover-buttons__item:hover,
+  .hover-buttons__item:focus {
+    color: #1c1a19;
+    text-decoration: none;
+    background-color: #fff;
+    outline: none;
+  }
+
+  .prod-categories__img:hover ~ .prod-categories__hover-buttons,
+  .prod-categories__img:focus ~ .prod-categories__hover-buttons,
+  .prod-categories__hover-buttons:hover,
+  .prod-categories__hover-buttons:focus-within,
+  .hover-buttons__item:hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .prod-categories__title:hover,
+  .prod-categories__title:focus {
+    color: var(--main-blue);
+    text-decoration: none;
   }
   
 /* 5. Custom styles */
@@ -1050,6 +1098,10 @@ Version: 1.0
   /* 6.4. Main */
     /* 6.4.2. Content */
       /* 6.4.2.1. Product categories */
+      .prod-categories {
+        margin-bottom: 7.1rem;
+      }
+
       .prod-categories__tab.active {
         color: var(--main-blue);
         border-bottom: 2px solid var(--main-blue);
@@ -1095,38 +1147,17 @@ Version: 1.0
         transition: .3s ease;
       }
 
-      .hover-buttons__item {
+      /* 6.4.2.2. Popular products */
+      .popular-prods__item {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        width: 50px;
-        height: 50px;
-        background-color: #1c1a19;
-        color: #fff;
-        border-radius: 50%;
-        border: 1px solid #1c1a19;
-        transition: .3s ease;
       }
 
-      .hover-buttons__item:hover,
-      .hover-buttons__item:focus {
-        color: #1c1a19;
-        text-decoration: none;
-        background-color: #fff;
-        outline: none;
-      }
-
-      .prod-categories__img:hover ~ .prod-categories__hover-buttons,
-      .prod-categories__img:focus ~ .prod-categories__hover-buttons,
-      .prod-categories__hover-buttons:hover,
-      .prod-categories__hover-buttons:focus-within,
-      .hover-buttons__item:hover {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .prod-categories__title:hover,
-      .prod-categories__title:focus {
-        color: var(--main-blue);
-        text-decoration: none;
+      .popular-prods__img {
+        width: 100%;
+        border: 1px solid #a4a4a4;
+        text-align: center;
+          /* Kludge. Remove after added correct-size image to product item */
+          padding: 3.5rem 0;
       }
