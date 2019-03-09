@@ -350,6 +350,11 @@ Version: 1.0
     font-size: 0.8rem;
   }
 
+  .item__price--old {
+    text-decoration: line-through;
+    color: #a4a4a4;
+  }
+
   /* 4.#. Section titles and descriptions */
   .section-title {
     font-size: 2.5rem;
