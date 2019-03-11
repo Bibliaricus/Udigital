@@ -1151,6 +1151,7 @@ Version: 1.0
       right: 2.5%;
       transform: translateY(-50%);
       transition: .3s ease;
+      pointer-events: none;
     }
 
     .sidebar-categories__item {
@@ -1158,11 +1159,104 @@ Version: 1.0
       border-right-color: transparent;
     }
 
-    /* temporary solution */
-    .sidebar-categories__sub-list {
-      display: none;
+    /* Drop-down menu */
+    .sidebar-categories__drop-down {
+      position: absolute;      
+      top: 300%;
+      left: calc(100% + 10px);
+      display: flex;
+      padding: 3rem;
+      font-family: 'Lato', sans-serif;
+      white-space: nowrap;
+      background-color: #ffffff;
+      box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.3);
+      border-left: 2px solid #1f7a4d;
+      visibility: hidden;
+      opacity: 0;
+      transition: .5s ease .2s;
+      z-index: 12;
+      pointer-events: none; /* Fix "jumping" drop-down menu, while cursor is located under the menu. */
     }
+
+    .sidebar-categories__link:hover ~ .sidebar-categories__drop-down,
+    .sidebar-categories__link:focus ~ .sidebar-categories__drop-down,
+    .sidebar-categories__item:hover .sidebar-categories__drop-down,
+    .sidebar-categories__drop-down:hover {
+      visibility: visible;
+      opacity: 1; 
+      top: -130%;
+    }
+
+    /* Fix "jumping" drop-down menu, while cursor is located under the menu. */
+    .sidebar-categories__link:hover ~ .sidebar-categories__drop-down,
+    .sidebar-categories__link:focus ~ .sidebar-categories__drop-down,
+    .sidebar-categories__item:hover .sidebar-categories__drop-down {
+      pointer-events: auto;
+    } 
+
+    /* Fix fading drop-down menu, during the transition cursour from link to drop down menu */
+    .sidebar-categories__drop-down::before {
+      content: '';
+      width: 41px;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: -2.1%;
+    }
+
+    .sidebar-categories__drop-down a:hover,
+    .sidebar-categories__drop-down a:focus {
+      color: inherit;
+    }
+
+    .drop-down__item ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .drop-down__list {
+      margin: 1.5rem;
+      text-transform: none;
+      transition: .3s ease .2s;
+      list-style: none;
+    }
+
+    .drop-down__link {
+      display: block;
+      padding: 0.5rem;
+    } 
+
+    .drop-down__item:not(:first-child) a:hover,
+    .drop-down__item:not(:first-child) a:focus {
+      text-decoration: underline;
+    }
+
+    .drop-down__item:first-child {
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding-bottom: 0.6rem;
+    }  
     
+    .drop-down__link ~ ul {
+      transition: .3s ease;      
+    }
+
+    .drop-down__link ~ ul li {
+      font-size: 0;
+      transition: .3s ease;      
+    }   
+
+    .drop-down__link:hover ~ ul,
+    .drop-down__link ~ ul:hover {
+      font-size: 1rem;
+    }
+
+    .drop-down__link:hover ~ ul li,
+    .drop-down__link ~ ul:hover li {
+      padding: 0.2em 0.2em 0.2em 1em;
+      font-size: 1rem;
+    }
+
     /* 6.4.2. Content */
       /* 6.4.2.1. Product categories */
       .prod-categories {
