@@ -1267,6 +1267,10 @@ Version: 1.0
         padding: 2rem 0;
       }
 
+      .sidebar-sale__counter {
+        margin-bottom: 2rem;
+      }
+
       .sidebar-sale__title {
         color: #ffffff;
       }
