@@ -1111,6 +1111,46 @@ Version: 1.0
   }
 
   /* 6.4. Main */
+    /* 6.4.1. Sidebar */
+    .sidebar-categories__title {
+      text-align: center;
+      margin-top: 9px;
+      margin-bottom: 0;
+      padding: 1.55rem 0;
+      background-color: #262525;
+      color: #fff;
+      font-size: 1.375rem;
+      letter-spacing: 0.138rem;
+    }
+
+    .sidebar-categories__item {
+      padding-left: 0;
+    }
+
+    .sidebar-categories__link {
+      color: #333232;
+      font-size: 0.813rem;
+      padding-left: 0.4rem;
+    }
+
+    .sidebar-categories__link::before {
+      font-size: 9px;
+      position: absolute;
+      top: 50%;
+      right: 2.5%;
+      transform: translateY(-50%);
+    }
+
+    .sidebar-categories__item {
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+
+    /* temporary solution */
+    .sidebar-categories__sub-list {
+      display: none;
+    }
+    
     /* 6.4.2. Content */
       /* 6.4.2.1. Product categories */
       .prod-categories {
@@ -1177,4 +1217,4 @@ Version: 1.0
 
       .popular-prods .hover-buttons__list {
         padding: 0 1.5rem;
-      }
+      }      
