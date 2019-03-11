@@ -43,6 +43,7 @@ Version: 1.0
       6.4.1.1. Categories
       6.4.1.2. Sale
       6.4.1.3. Tags
+      6.4.1.4. Promo
     6.4.2. Content
       6.4.2.1. Product categories
       6.4.2.2. Popular products
@@ -1310,6 +1311,22 @@ Version: 1.0
         background-color: #f8f8f8;
         margin-bottom: 0.5rem;
         margin-right: 0.3rem;
+      }
+
+      /* 6.4.1.4. Promo */
+      .sidebar__promo {
+        background-color: #f8f8f8;
+        text-align: center;
+        padding-top: 2.15rem;
+      }
+
+      .sidebar-promo__title {
+        font-size: 1.875rem;
+        letter-spacing: 0.038rem;
+      }
+
+      .sidebar__promo .sidebar__btn {
+        margin-bottom: 1.8rem;
       }
 
     /* 6.4.2. Content */
