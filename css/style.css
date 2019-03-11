@@ -1315,10 +1315,7 @@ Version: 1.0
 
       .popular-prods__img {
         width: 100%;
-        border: 1px solid #a4a4a4;
-        text-align: center;
-          /* Kludge. Remove after added correct-size image to product item */
-          padding: 3.7rem 0;
+        text-align: center;          
       }
 
       .popular-prods .hover-buttons__list {
