@@ -1289,6 +1289,10 @@ Version: 1.0
         margin-bottom: 2.65rem;
       }
 
+      .sidebar__sale .main-banner__arrow {
+        top: 40%;
+      }
+
     /* 6.4.2. Content */
       /* 6.4.2.1. Product categories */
       .prod-categories {
