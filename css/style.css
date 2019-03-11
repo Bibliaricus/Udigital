@@ -1131,6 +1131,17 @@ Version: 1.0
       color: #333232;
       font-size: 0.813rem;
       padding-left: 0.4rem;
+      transition: .3s ease;
+    }
+
+    .sidebar-categories__link:hover,
+    .sidebar-categories__link:focus-within {
+      color: inherit;
+    }
+
+    .sidebar-categories__item:hover .sidebar-categories__link::before,
+    .sidebar-categories__link:focus-within::before {
+      transform: rotate(-90deg);
     }
 
     .sidebar-categories__link::before {
@@ -1139,6 +1150,7 @@ Version: 1.0
       top: 50%;
       right: 2.5%;
       transform: translateY(-50%);
+      transition: .3s ease;
     }
 
     .sidebar-categories__item {
