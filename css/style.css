@@ -51,6 +51,7 @@ Version: 1.0
       6.4.3.1. Second banners
       6.4.3.2. Main banner
     6.4.4. New products
+    6.4.5. Latest news
   
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -219,7 +220,8 @@ Version: 1.0
     /* Second font */
     .section-description,
     .btn, 
-    .promo__description {
+    .promo__description,
+    .latest-news__footer {
       font-family: 'Open Sans', sans-serif;
     }
 
@@ -267,7 +269,8 @@ Version: 1.0
     .shoping-cart-popup::after,
     .btn,
     .prod-categories__tab,
-    .prod-categories__title {
+    .prod-categories__title,
+    .latest-news__title {
       font-weight: 700;
     }
 
@@ -1519,6 +1522,7 @@ Version: 1.0
       /* 6.4.4. New products */
       .new-products {
         text-align: center;
+        margin-bottom: 7.5rem;
       }
       
       .new-products__item {
@@ -1528,7 +1532,8 @@ Version: 1.0
         border-right: 1px solid var(--main-gray);       
       }
 
-      .new-products .section-description {
+      .new-products .section-description,
+      .latest-news .section-description {
         width: 60%;
         text-align: center;
         margin-left: auto;
@@ -1569,4 +1574,41 @@ Version: 1.0
 
       .new-products .popular-prods__img {
         margin-bottom: 2.5rem;
+      }
+
+      /* 6.4.5. Latest news */
+      .latest-news {
+        text-align: center;
+      }
+
+      .latest-news__item {
+        text-align: left;
+      }
+
+      .latest-news__title {
+        font-size: 1.125rem;
+        letter-spacing: 0.023rem;
+      }
+
+      .latest-news__img {
+        display: block;
+      }
+
+      .latest-news__footer {
+        color: #a4a4a4;
+        font-size: 0.75rem;
+      }
+
+      .latest-news__footer span {
+        display: inline-flex;
+        margin-right: 1rem;
+      }
+
+      .latest-news__footer span::before {
+        font-size: 19px;
+        margin-right: 0.5rem;
+      }
+
+      .latest-news__tag {
+        margin: 0 4px;
       }
