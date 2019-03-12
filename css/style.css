@@ -19,12 +19,7 @@ Version: 1.0
   4.#. General styles of product items
   4.#. Section titles and descriptions
   4.#. Quick popup
-  4.#. Hover buttons
-
-  4.#. Numbers and emails
-  4.#. Social icons line
-  4.#. Slider dots
-  4.#. Titles of widget in sidebar
+  4.#. Hover buttons  
 5. Custom styles
   5.0. Custom containters (Bootstrap 4)
   5.1. Active slide in category slider (Bootstrap slider) 
@@ -1696,4 +1691,41 @@ Version: 1.0
     border: 1px solid var(--main-gray);
     padding: 0.7rem 1.1rem;
     margin-right: 0.7rem;
+  }
+
+/* 7. Responsive - index.html (indicate Responsive in this form for each page) */
+  /* 7.1 Min-width: 1200px */
+  @media only screen and (min-width: 1200px){
+    .test:after  { content: '@media (min-width: 1200px) >>>';} 
+    
+  }
+
+  @media only screen and (max-width: 1199.98px){
+      .test:after  { content: '@media (max-width: 1200px)';}   
+      
+  }
+
+  @media only screen and (max-width: 991.98px){
+      .test:after  { content: '@media (max-width: 992px)';}  
+      
+  }
+
+  @media only screen and (max-width: 767.98px){
+      .test:after  { content: '@media (max-width: 768px)';}  
+
+  }
+
+  @media only screen and (max-width: 575.98px){
+      .test:after  { content: '@media (max-width: 576px)';}  
+
+  }
+
+  @media only screen  and (max-width: 480px) {
+      .test:after  { content: '@media (max-width: 480px)';}  
+
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 400px) {
+      .test:after { content: '@media min-width: 320px and @max-width: 400px)';}
+      
   }
