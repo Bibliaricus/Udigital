@@ -49,6 +49,7 @@ Version: 1.0
       6.4.2.2. Popular products
     6.4.3. Bottom banners
       6.4.3.1. Second banners
+      6.4.3.2. Main banner
   
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -247,7 +248,8 @@ Version: 1.0
     .item__price--new,
     .promo__sale,
     .categories__title,
-    .second-b-banners__title {
+    .second-b-banners__title,
+    .main-b-banner__title {
       font-weight: 900;
     }
 
@@ -287,7 +289,8 @@ Version: 1.0
     .categories__title,
     .prod-categories__tab,
     .sidebar-tags__item,
-    .second-b-banners__title {
+    .second-b-banners__title,
+    .main-b-banner__title {
       text-transform: uppercase;
     }
 
@@ -1401,7 +1404,9 @@ Version: 1.0
       /* 6.4.3. Bottom banners */
       .second-b-banners__category,
       .second-b-banners__title,
-      .bottom-banners .item__price {
+      .bottom-banners .item__price,
+      .main-b-banner__title,
+      .promo__sale {
         color: #ffffff;
       }
         /* 6.4.3.1. Second banners */
@@ -1411,7 +1416,6 @@ Version: 1.0
         }
 
         .main-bottom-banner.col-8 {
-          background-color: var(--main-blue);
           height: 400px;
         }
 
@@ -1443,4 +1447,42 @@ Version: 1.0
 
         .bottom-banners .item__price-list {
           font-size: 0.938rem; 
+        }
+
+        /* 6.4.3.2. Main banner */
+        .main-bottom-banner {
+          align-items: center;
+          background-color: var(--main-blue);          
+        }
+
+        .main-b-banner__img {
+          text-align: center;
+        }
+
+        .main-b-banner__text {
+          text-align: center;
+        }
+
+        .main-b-banner__title {
+          font-size: 2.25rem;
+          letter-spacing: 0.045rem;
+        }
+
+        .promo__description {
+          font-size: 0.938rem;
+          color: #def6fe;
+          width: 75%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .promo__sale {
+          font-size: 2.375rem;
+          letter-spacing: 0.048rem;
+        }
+
+        .promo__sale span {
+          font-size: 3rem;
+          color: #0776bc;
+          letter-spacing: 0.06rem;
         }
