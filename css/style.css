@@ -50,6 +50,7 @@ Version: 1.0
     6.4.3. Bottom banners
       6.4.3.1. Second banners
       6.4.3.2. Main banner
+    6.4.4. New products
   
 7. Responsive - index.html (indicate Responsive in this form for each page)
   7.1 Min-width: 1200px
@@ -1405,6 +1406,7 @@ Version: 1.0
         /* 6.4.3.1. Second banners */
         .bottom-banners {
           margin-top: 5rem;
+          margin-bottom: 6.9rem;
         }
         
         .second-b-banners__category,
@@ -1513,3 +1515,21 @@ Version: 1.0
         .main-bottom-banner:focus img {
           transform: translateX(10px);
         }
+
+      /* 6.4.4. New products */
+      .new-products {
+        text-align: center;
+      }
+      
+      .new-products__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;        
+      }
+
+      .new-products .section-description {
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
