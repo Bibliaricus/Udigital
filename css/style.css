@@ -1402,40 +1402,29 @@ Version: 1.0
       }
 
       /* 6.4.3. Bottom banners */
-      .second-b-banners__category,
-      .second-b-banners__title,
-      .bottom-banners .item__price,
-      .main-b-banner__title,
-      .promo__sale {
-        color: #ffffff;
-      }
-
-      .second-b-banners__item {
-        display: block;
-      }
-
-      .second-b-banners__item:hover,
-      .second-b-banners__item:focus,
-      .main-bottom-banner:hover,
-      .main-bottom-banner:focus {
-        text-decoration: none;
-      }
-
-      .main-bottom-banner {
-        display: flex;
-      }
-
         /* 6.4.3.1. Second banners */
-        .bottom-banners.row.no-gutters {
-          margin-top: 79px;
-          margin-bottom: 30rem;
+        .bottom-banners {
+          margin-top: 5rem;
+        }
+        
+        .second-b-banners__category,
+        .second-b-banners__title,
+        .bottom-banners .item__price,
+        .main-b-banner__title,
+        .promo__sale {
+          color: #ffffff;
         }
 
-        .main-bottom-banner.col-8 {
-          height: 400px;
-        }
+        .second-b-banners__item {
+          display: block;
+        }           
 
-        /* ↑ Timening properdies */
+        .second-b-banners__item:hover,
+        .second-b-banners__item:focus,
+        .main-bottom-banner:hover,
+        .main-bottom-banner:focus {
+          text-decoration: none;
+        }        
 
         .second-b-banners__item {
           background-repeat: no-repeat;          
@@ -1468,7 +1457,8 @@ Version: 1.0
         /* 6.4.3.2. Main banner */
         .main-bottom-banner {
           align-items: center;
-          background-color: var(--main-blue);          
+          background-color: var(--main-blue);
+          min-height: 400px;
         }
 
         .main-b-banner__img {
