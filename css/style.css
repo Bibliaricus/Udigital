@@ -1409,6 +1409,22 @@ Version: 1.0
       .promo__sale {
         color: #ffffff;
       }
+
+      .second-b-banners__item {
+        display: block;
+      }
+
+      .second-b-banners__item:hover,
+      .second-b-banners__item:focus,
+      .main-bottom-banner:hover,
+      .main-bottom-banner:focus {
+        text-decoration: none;
+      }
+
+      .main-bottom-banner {
+        display: flex;
+      }
+
         /* 6.4.3.1. Second banners */
         .bottom-banners.row.no-gutters {
           margin-top: 79px;
