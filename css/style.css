@@ -1492,3 +1492,24 @@ Version: 1.0
           color: #0776bc;
           letter-spacing: 0.06rem;
         }
+
+        /* Hovers to bottom banners */
+
+        .main-bottom-banner img {
+          transition: .5s ease;
+        }
+
+        .second-b-banners__item {
+          background-size: calc(72%);
+          transition: .3s ease;
+        }
+
+        .second-b-banners__item:hover,
+        .second-b-banners__item:focus {
+          background-size: calc(72% + 3px);
+        }
+
+        .main-bottom-banner:hover img,
+        .main-bottom-banner:focus img {
+          transform: translateX(10px);
+        }
