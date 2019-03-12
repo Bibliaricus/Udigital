@@ -26,10 +26,11 @@ $(document).ready(function(){
     }
   })();
 
-  //  Slider in quick view popup (slick slider)
-  // $('.q-view-popup__image-slider').slick({
-  //   arrows: true,
-  //   dots: true
-  // });
+  // New products slider (Slick)
+  $('.new-products__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
 
 });
