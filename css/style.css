@@ -1658,6 +1658,18 @@ Version: 1.0
     line-height: 2.2;
     font-size: 15px;
   }
+
+  .footer-link__link:hover,
+  .footer-link__link:focus,
+  .footer-icons-list__item:hover,
+  .footer-icons-list__item:focus {
+    color: #ffffff;
+  }
+
+  .footer-icons-list__item:hover,
+  .footer-icons-list__item:focus {
+    text-decoration: none;
+  }
   
   .footer__subscribe {
     margin-bottom: 2rem;
