@@ -1524,7 +1524,8 @@ Version: 1.0
       .new-products__item {
         position: relative;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        border-right: 1px solid var(--main-gray);       
       }
 
       .new-products .section-description {
@@ -1534,10 +1535,38 @@ Version: 1.0
         margin-right: auto;
       }
 
+      .new-products .slick-slide {
+        display: flex;
+      }
+
+      .new-products .slick-slide img {
+        display: inline-block;
+      }
+
       .new-products .slick-prev {
         left: 0;
       }
 
       .new-products .slick-next {
         right: 0;
+      }
+
+      .new-products .slick-list {
+        border: 1px solid var(--main-gray);
+      }
+
+        /* It's a kludge for remove double border in right side in new product slider */
+        .slick-list::before {
+          content: '';
+          width: 2px;
+          height: 100%;
+          position: absolute;
+          background-color: #fff;
+          right: 0px;
+          pointer-events: none;
+          z-index: 1;
+        }
+
+      .new-products .popular-prods__img {
+        margin-bottom: 2.5rem;
       }
