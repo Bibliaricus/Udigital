@@ -1006,6 +1006,12 @@ Version: 1.0
       font-size: 0.875rem;      
     }
 
+    .header-bottom__search {
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+
   /* 6.2. Top banners */
     .top-banners {
       margin-bottom: 7.3rem;
