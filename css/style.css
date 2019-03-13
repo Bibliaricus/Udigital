@@ -1787,7 +1787,9 @@ Version: 1.0
 
   @media only screen and (max-width: 575.98px){
       .test:after  { content: '@media (max-width: 576px [col-])';}  
-
+      .header-top__left {
+        flex-wrap: wrap;
+      }
   }
 
   @media only screen  and (max-width: 480px) {
@@ -1799,3 +1801,10 @@ Version: 1.0
       .test:after { content: '@media min-width: 320px and @max-width: 400px)';}
       
   }
+
+  /* Just for dev responsive */
+.sidebar__categories,
+.latest-news__footer,
+.footer__input {
+  display: none;
+}
