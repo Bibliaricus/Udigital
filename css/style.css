@@ -732,7 +732,7 @@ Version: 1.0
     .header-top__navbar .nav-link,
     .header-top__navbar .navbar-text {
       white-space: nowrap;
-    }
+    }    
 
     /* 6.1.2. Header-bottom */
       /* Wishlist and shopping cart popups */
@@ -1762,6 +1762,16 @@ Version: 1.0
 
       .header-bottom__logo {
         margin-right: 0;
+      }
+
+      #header-responsive-menu {
+        position: fixed;
+        top: calc(3.5rem + 1px);
+        right: 0;
+        background-color: #fff;
+        border-left: 1px solid var(--main-gray);
+        border-bottom: 1px solid var(--main-gray);
+        padding: 1rem 2rem 2rem;
       }
   }
 
