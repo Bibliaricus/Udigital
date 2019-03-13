@@ -1794,7 +1794,16 @@ Version: 1.0
 
   @media only screen  and (max-width: 480px) {
       .test:after  { content: '@media (max-width: 480px)';}  
+      .shoping-cart, 
+      .vish-list {
+        width: 320px;
+      }
 
+      .search__input,
+      .search__select {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+      }
   }
 
   @media only screen and (min-width: 320px) and (max-width: 400px) {
