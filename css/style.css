@@ -1722,6 +1722,15 @@ Version: 1.0
       background-color: #000000;
       text-decoration: none;
     }
+
+    .main-banner__slide {
+      margin-left: 0 !important;
+      text-align: center;
+    }
+
+    .main-banner__text {
+      width: 100%;
+    }
   }
   
   @media only screen and (min-width: 1200px){
