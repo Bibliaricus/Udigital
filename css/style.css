@@ -585,7 +585,7 @@ Version: 1.0
 
   main.container {
     max-width: 1200px;
-    word-break: break-all;
+    /* word-break: break-all; */
   }
 
   /* 5.1. Active slide in category slider (Bootstrap slider) */
@@ -1695,6 +1695,8 @@ Version: 1.0
 
 /* 7. Responsive - index.html (indicate Responsive in this form for each page) */
   /* 7.1 Min-width: 1200px */
+  .test {position: fixed; top: 10px; right: 10px; color: tomato; z-index: 99999999;}
+  
   @media only screen and (min-width: 1200px){
     .test:after  { content: '@media (min-width: 1200px) >>>';} 
     
