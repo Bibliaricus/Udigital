@@ -1718,7 +1718,7 @@ Version: 1.0
 
     .buy-theme:hover,
     .buy-theme:focus {
-      color: #ffffff;
+      color: #ffffff !important;
       background-color: #000000;
       text-decoration: none;
     }
