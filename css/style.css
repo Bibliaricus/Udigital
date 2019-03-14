@@ -1728,6 +1728,14 @@ Version: 1.0
     .top-banners__second-banner:nth-child(1) {
       margin-bottom: -1px;
     }
+
+    .slick-prev {
+      left: -10%;
+    }
+
+    .slick-next {
+      right: -10%;
+    }
   }
   
   @media only screen and (max-width: 1849.98px){
