@@ -1852,7 +1852,17 @@ Version: 1.0
 
   @media only screen and (max-width: 767.98px){
       .test:after  { content: '@media (max-width: 768px [col-sm])';}  
+      .main-banner__title {
+        font-size: 2.5rem;
+      }
 
+      .top-banners__second-banners {
+        flex-wrap: wrap;
+      }
+
+      .top-banners__second-banner:nth-child(1) {
+        margin-bottom: -1px;
+      }
   }
 
   @media only screen and (max-width: 575.98px){
