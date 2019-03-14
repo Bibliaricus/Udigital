@@ -1860,6 +1860,34 @@ Version: 1.0
       .top-banners {
         margin-bottom: 4rem;
       }
+
+      .sidebar {
+        order: 1;
+      }
+
+      .categories {
+        margin-bottom: 4rem;
+      }
+
+      .section-title {
+        text-align: center;
+      }
+
+      #categories-tabs {
+        margin-bottom: 1rem;
+      }
+
+      .prod-categories {
+        margin-bottom: 3rem;
+      }
+
+      .popular-prods__list {
+        padding-top: 0rem;
+      }
+
+      .section-description {
+        text-align: center;
+      }
   }
 
   @media only screen and (max-width: 767.98px){
