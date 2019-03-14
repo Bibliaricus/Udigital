@@ -2050,6 +2050,19 @@ Version: 1.0
       .q-view-popup__image-slider {
         margin-bottom: 3rem;
       }
+
+      .main-b-banner__img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .main-bottom-banner {
+        padding-bottom: 1rem;
+      }
+
+      .second-bottom-banners {
+        flex-direction: column;
+      }
   }
 
   @media only screen  and (max-width: 480px) {
