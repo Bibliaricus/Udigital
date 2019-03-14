@@ -1808,7 +1808,54 @@ Version: 1.0
 
   @media only screen and (min-width: 320px) and (max-width: 400px) {
       .test:after { content: '@media min-width: 320px and @max-width: 400px)';}
-      
+      .header-top__left {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+      }
+
+      .header-top__language-button::after, 
+      .header-top__currency-button::after {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+      }
+
+      .header-bottom__logo {
+        margin-bottom: 1rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .header-bottom__icons-list {
+        justify-content: center !important;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .header-bottom__total-price {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      .search__input {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+      }
+
+      .search__select {
+        order: -1;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .search__button {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+      }
+
+      .header-bottom__search {
+        margin-bottom: 0.5rem;
+      }
   }
 
   /* Just for dev responsive */
