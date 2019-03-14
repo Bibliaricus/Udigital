@@ -2110,6 +2110,11 @@ Version: 1.0
       .latest-news__item {
         margin-bottom: 1.5rem;
       } 
+
+      .footer__links:nth-of-type(3) {
+        margin-left: auto;
+        margin-right: auto;
+      }
   }
 
   @media only screen  and (max-width: 480px) {
