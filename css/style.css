@@ -1893,12 +1893,13 @@ Version: 1.0
         top: inherit;
         bottom: 0;
         opacity: 1;
-        margin-bottom: -1px;
+        margin-bottom: -2px;
         justify-content: center;
         background-color: #1c1a19;
         transform: translateY(0);
         pointer-events: auto;
         border-top: 1px solid var(--main-gray);
+        border-bottom: 1px solid var(--main-gray);
       }
 
       .hover-buttons__item {
@@ -1915,7 +1916,7 @@ Version: 1.0
 
       .hover-buttons__item:first-child {
         border-left: none;
-        margin-left: 1px;
+        margin-left: 0;
       }
 
       .hover-buttons__item:last-child {
@@ -1924,6 +1925,18 @@ Version: 1.0
 
       .popular-prods__item {
         padding-bottom: 1rem;
+      }
+
+      .popular-prods .hover-buttons__list {
+        padding: 0 0rem;
+        width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #1c1a19;
+      }
+
+      .popular-prods__img img {
+        width: 100%;
       }
   }
 
@@ -1939,7 +1952,7 @@ Version: 1.0
 
       .top-banners__second-banner:nth-child(1) {
         margin-bottom: -1px;
-      }
+      }            
   }
 
   @media only screen and (max-width: 575.98px){
