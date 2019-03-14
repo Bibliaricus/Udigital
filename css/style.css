@@ -1888,7 +1888,29 @@ Version: 1.0
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
       }
-  }
+
+      .main-banner__slide {
+        padding: 2.5rem 0rem 3rem;
+      }
+
+      .main-banner__dot-list {
+        bottom: -1%;
+      }
+
+      .main-banner__text {
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100%;
+        padding: 2rem;
+      }
+
+      .main-banner__image {
+        width: 70%;
+      }
 
   @media only screen and (min-width: 320px) and (max-width: 400px) {
       .test:after { content: '@media min-width: 320px and @max-width: 400px)';}
