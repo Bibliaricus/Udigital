@@ -1868,6 +1868,8 @@ Version: 1.0
       .latest-news__footer span {
         flex-wrap: wrap;
       }
+
+      .latest-news {margin-bottom: 2rem;}
   }
 
   @media only screen and (max-width: 991.98px){
