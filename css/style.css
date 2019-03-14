@@ -1860,6 +1860,14 @@ Version: 1.0
       .latest-news .section-description {
         width: 100%;
       }
+
+      .new-products {
+        margin-bottom: 3rem;
+      }
+
+      .latest-news__footer span {
+        flex-wrap: wrap;
+      }
   }
 
   @media only screen and (max-width: 991.98px){
@@ -2177,7 +2185,6 @@ Version: 1.0
 
   /* Just for dev responsive */
   .sidebar-categories__drop-down,
-  .latest-news__footer,
   .footer__input {
     display: none;
   }
