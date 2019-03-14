@@ -1837,7 +1837,17 @@ Version: 1.0
 
   @media only screen and (max-width: 991.98px){
       .test:after  { content: '@media (max-width: 992px [col-md])';}  
-      
+      .main-banner__title {
+        font-size: 3rem;
+      }   
+
+      .top-banners__second-banner {
+        padding: 1.5rem 0rem;
+      }
+
+      .top-banners {
+        margin-bottom: 4rem;
+      }
   }
 
   @media only screen and (max-width: 767.98px){
