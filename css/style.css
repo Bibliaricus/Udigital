@@ -2081,6 +2081,12 @@ Version: 1.0
       .slick-arrow {
         width: 20%;
       }
+
+      .prod-categories__item,
+      .popular-prods__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }      
   }
 
   /* Just for dev responsive */
