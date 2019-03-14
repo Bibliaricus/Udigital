@@ -2078,6 +2078,15 @@ Version: 1.0
       .second-bottom-banners {
         flex-direction: column;
       }
+
+      .latest-news__img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .latest-news__item {
+        margin-bottom: 1.5rem;
+      } 
   }
 
   @media only screen  and (max-width: 480px) {
