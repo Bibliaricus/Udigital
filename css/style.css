@@ -1019,7 +1019,7 @@ Version: 1.0
     
     /* 6.2.1. Main banner */
     .top-banners__main-banner-slider {
-      background-color: var(--main-blue);
+      background-color: var(--main-blue);      
     }
 
     .main-banner__slide {
@@ -1702,6 +1702,26 @@ Version: 1.0
   /* 7.1 Min-width: 1200px */
   .test {position: fixed; top: 10px; left: 10px; color: tomato; z-index: 99999999;}
 
+  @media only screen and (min-width: 1899.98px) {
+    .top-banners__main-banner-slider {
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%;
+    }
+
+    .top-banners__second-banners {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+
+    .top-banners__second-banners {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+  }
+  
   @media only screen and (max-width: 1849.98px){
     .test::after  { content: '@media (max-width: 1850px)';}
     .header-top__navbar .navbar-nav {
@@ -1730,6 +1750,25 @@ Version: 1.0
     .main-banner__text {
       width: 100%;
     }
+
+    .top-banners__second-banners {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 3rem;
+    }
+    
+    .top-banners__second-banner {
+      width: 100%;
+      margin: 0 -1px 0 0;
+    }
+
+    .top-banners {
+      margin-bottom: 6rem;
+    }
+
+    .categories {
+      margin-bottom: 6rem;
+    }
   }
     /* Super kludge for correct position items in main navigation in header */
     @media only screen and (min-width: 1200px) and (max-width: 1327.98px) {
@@ -1746,6 +1785,11 @@ Version: 1.0
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
+      }
+
+      .main-banner__text {
+        width: 50%;
+        padding: 0rem 2rem;
       }
     }
 
@@ -1773,6 +1817,14 @@ Version: 1.0
         border-bottom: 1px solid var(--main-gray);
         padding: 1rem 2rem 2rem;
       }
+
+      /* .main-banner__text {
+        width: 50%;
+      }
+
+      .main-banner__image {
+        width: 40%;
+      } */
   }
 
   @media only screen and (max-width: 991.98px){
