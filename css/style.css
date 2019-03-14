@@ -1848,6 +1848,11 @@ Version: 1.0
       .second-banner__title {
         font-size: 1.475rem;
       }
+
+      .bottom-banners {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+      }
   }
 
   @media only screen and (max-width: 991.98px){
@@ -1949,6 +1954,23 @@ Version: 1.0
             .sidebar {
               display: none;
             }
+
+      .main-bottom-banner {
+        order: -1;
+      }
+
+      .second-bottom-banners {
+        display: flex;
+      }
+
+      .second-b-banners__item {
+        width: 100%;
+        height: auto;
+      }
+
+      .second-b-banners__item:nth-child(1) {
+        background-position: 158% -60%;
+      }
   }
 
   @media only screen and (max-width: 767.98px){
