@@ -1132,7 +1132,7 @@ Version: 1.0
 
   /* 6.4. Main */
     /* 6.4.1. Sidebar */
-      /* 6.4.1.1. Categories */
+      /* 6.4.1.1. Categories */      
       .sidebar-categories__title {
         text-align: center;
         margin-top: 9px;
@@ -1945,6 +1945,10 @@ Version: 1.0
       .prod-categories__item {
         margin-bottom: 1.5rem;
       }
+
+            .sidebar {
+              display: none;
+            }
   }
 
   @media only screen and (max-width: 767.98px){
@@ -2130,8 +2134,8 @@ Version: 1.0
   }
 
   /* Just for dev responsive */
-.sidebar__categories,
-.latest-news__footer,
-.footer__input {
-  display: none;
-}
+  .sidebar-categories__drop-down,
+  .latest-news__footer,
+  .footer__input {
+    display: none;
+  }
