@@ -1971,6 +1971,10 @@ Version: 1.0
       .second-banner__title {
         font-size: 1.175rem;
       }
+
+      .slick-arrow {
+        width: 20%;
+      }
   }
 
   /* Just for dev responsive */
