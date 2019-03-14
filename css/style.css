@@ -1720,6 +1720,14 @@ Version: 1.0
       flex: 0 0 41.666667%;
       max-width: 41.666667%;
     }
+
+    .top-banners__second-banner {
+      margin: 0;
+    }
+
+    .top-banners__second-banner:nth-child(1) {
+      margin-bottom: -1px;
+    }
   }
   
   @media only screen and (max-width: 1849.98px){
@@ -1745,11 +1753,7 @@ Version: 1.0
     .main-banner__slide {
       margin-left: 0 !important;
       text-align: center;
-    }
-
-    .main-banner__text {
-      width: 100%;
-    }
+    }    
 
     .top-banners__second-banners {
       overflow: hidden;
@@ -1790,7 +1794,7 @@ Version: 1.0
       .main-banner__text {
         width: 50%;
         padding: 0rem 2rem;
-      }
+      }      
     }
 
   @media only screen and (max-width: 1199.98px){
@@ -1911,6 +1915,7 @@ Version: 1.0
       .main-banner__image {
         width: 70%;
       }
+    }
 
   @media only screen and (min-width: 320px) and (max-width: 400px) {
       .test:after { content: '@media min-width: 320px and @max-width: 400px)';}
