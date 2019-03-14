@@ -1888,6 +1888,43 @@ Version: 1.0
       .section-description {
         text-align: center;
       }
+
+      .hover-buttons__list {
+        top: inherit;
+        bottom: 0;
+        opacity: 1;
+        margin-bottom: -1px;
+        justify-content: center;
+        background-color: #1c1a19;
+        transform: translateY(0);
+        pointer-events: auto;
+        border-top: 1px solid var(--main-gray);
+      }
+
+      .hover-buttons__item {
+        flex-grow: 1;
+        width: 30px;
+        height: 30px;
+        margin-left: -1px;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid var(--main-gray);
+        border-right: 1px solid var(--main-gray);
+        border-radius: 0;
+      }
+
+      .hover-buttons__item:first-child {
+        border-left: none;
+        margin-left: 1px;
+      }
+
+      .hover-buttons__item:last-child {
+        border-right: none;
+      }
+
+      .popular-prods__item {
+        padding-bottom: 1rem;
+      }
   }
 
   @media only screen and (max-width: 767.98px){
