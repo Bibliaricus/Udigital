@@ -1938,6 +1938,10 @@ Version: 1.0
       .popular-prods__img img {
         width: 100%;
       }
+
+      .prod-categories__item {
+        margin-bottom: 1.5rem;
+      }
   }
 
   @media only screen and (max-width: 767.98px){
@@ -1952,7 +1956,19 @@ Version: 1.0
 
       .top-banners__second-banner:nth-child(1) {
         margin-bottom: -1px;
-      }            
+      }
+
+      .prod-categories .nav {
+        align-items: center;
+      }
+
+      .prod-categories__tab {
+        max-width: 100%;
+      }
+
+      .prod-categories {
+        margin-bottom: 1.5rem;
+      }
   }
 
   @media only screen and (max-width: 575.98px){
