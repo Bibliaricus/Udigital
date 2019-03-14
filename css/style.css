@@ -382,6 +382,8 @@ Version: 1.0
     position: absolute;
     width: 120%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
     padding: 2.5em 0em;
     background-color: #ffffff;
@@ -503,8 +505,9 @@ Version: 1.0
 
   .q-view-popup .close {
     position: absolute;
+    top: 5%;
     right: 5%;
-    top: -10%;
+    z-index: 10;
   }
 
   .q-view__dot-list {
@@ -1991,6 +1994,35 @@ Version: 1.0
 
       .section-title {
         font-size: 2.2rem;
+      }
+
+      .q-view__dot-list {
+        bottom: -30%;
+      }
+
+      li.q-view__dot {
+        width: 10px;
+        height: 10px;
+      }
+      
+      .carousel-indicators li {
+        margin-left: 7px;
+        margin-right: 7px;
+      }
+
+      .q-view-popup {        
+        top: 0;
+        padding-top: 0;
+        z-index: 10;        
+      }
+
+      .q-view-popup .close {
+        top: 3%;
+        font-size: 45px;
+      }
+
+      .q-view-popup__image-slider {
+        margin-bottom: 3rem;
       }
   }
 
