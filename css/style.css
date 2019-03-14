@@ -1732,11 +1732,13 @@ Version: 1.0
       margin-bottom: -1px;
     }
 
-    .slick-prev {
+    .slick-prev,
+    .new-products .slick-prev {
       left: -10%;
     }
 
-    .slick-next {
+    .slick-next,
+    .new-products .slick-next {
       right: -10%;
     }
   }
