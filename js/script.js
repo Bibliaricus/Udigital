@@ -79,4 +79,27 @@ $(document).ready(function(){
     ]
   });
 
+  // Enable Bootstrap collapse in footer lists
+
+  // if ( $(window).width() < 768) {
+  //   $('.footer-link__list').addClass('collapse');
+  //  }
+
+  function myFunction() {
+    if($(window).width() < 768)
+    {   
+      $('.footer-link__list').addClass('collapse');
+    } else {
+      if ( $('.footer-link__list').hasClass('collapse') ) {
+        $('.footer-link__list').removeClass('collapse');
+        }
+    }
+}
+
+  myFunction();
+
+  $(window).resize(function() {
+      myFunction();
+  });
+  
 });
