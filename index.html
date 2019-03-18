@@ -158,8 +158,9 @@
         </form>
       </div>
       <div class="header-bottom__icons-list d-flex justify-content-end align-items-center col-6 col-lg-3">
-        <a href="#" class="header-bottom__icon-item icon-font-heart-regular vish-list-popup"></a>
-        <div class="vish-list">
+        <a href="#" class="header-bottom__icon-item icon-font-heart-regular" onclick="openNav()"></a>
+        <div class="vish-list sidenav" id="vish-list-off-canvas">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="vish-list__header">
             <span class="vish-list__title">Wishlist</span>
           </div>
@@ -176,8 +177,9 @@
             <a href="#" class="vish-list__vish-list-button vish-list__btn">Viev wishlist</a>
           </div>
         </div>
-        <a href="#" class="header-bottom__icon-item icon-font-bag shoping-cart-popup"></a>
-        <div class="shoping-cart">
+        <a href="#" class="header-bottom__icon-item icon-font-bag" onclick="openNav2()"></a>
+        <div class="shoping-cart sidenav" id="shoping-cart-off-canvas">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
           <div class="shopping-cart__item-list">
             <div class="shopping-cart__item">
               <img src="img/product_image-2.jpg" alt="Description of product" class="shopping-cart__item-image" width="50" height="50">

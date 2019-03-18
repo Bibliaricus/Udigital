@@ -786,6 +786,7 @@ Version: 1.0
         border-top: none;
         border-bottom: 1px solid #eaeaea;
         max-height: 40vh;
+        overflow-x: hidden;
         overflow-y: auto;
       }
     
@@ -925,7 +926,7 @@ Version: 1.0
       }
 
       /* Mechanism of opening and closing */
-      .shoping-cart,
+      /* .shoping-cart,
       .vish-list {
         visibility: hidden;
         opacity: 0;
@@ -941,7 +942,7 @@ Version: 1.0
       .shoping-cart:focus-within {
         visibility: visible !important;
         opacity: 1 !important;
-      }
+      } */
       /* End styles for wishlist and shopping popups */
     
     .search__input,
@@ -2485,3 +2486,38 @@ Version: 1.0
   .sidebar-categories__drop-down {
     display: none;
   }  
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    max-width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    padding: 60px 0 0 0;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 1;
+  }
+
+  .off-canvas-open {
+    max-width: 400px;
+    padding: 60px 3rem 0.5rem 1.5rem;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+  }
