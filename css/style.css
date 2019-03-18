@@ -1444,18 +1444,18 @@ Version: 1.0
           height: 50%;
         }
         .second-b-banners__item:nth-child(1) {
-          padding: 1.7rem 1.9rem;
+          padding: 1.7rem 1.9rem 4.7rem 1.9rem;
           background-color: #e43c4c;
           background-image: url('../img/bottom_banner-1.png');
-          background-position: 158% 370%;
+          background-position: 12rem 3rem;
         }
         
         .second-b-banners__item:nth-child(2) {
           background-color: #8562d4;
           text-align: right;
           background-image: url('../img/bottom_banner-2.png');
-          padding: 1.5rem 3.1rem;
-          background-position: -83% 108%;
+          padding: 1.7rem 1.9rem 4.7rem 1.9rem;
+          background-position: -4rem 3rem;
         }
 
         .second-b-banners__title {
@@ -1493,6 +1493,8 @@ Version: 1.0
           width: 75%;
           margin-left: auto;
           margin-right: auto;
+          font-weight: normal;
+          text-transform: none;
         }
 
         .promo__sale {
@@ -1524,10 +1526,11 @@ Version: 1.0
           visibility: hidden;
           opacity: 0;
           transform: translateY(20px);
+          z-index: 1;
         }  
 
         .main-b-banner__btn {
-          bottom: -20%;
+          bottom: -25%;
           margin-left: auto;
           margin-right: auto;
         }
@@ -2041,6 +2044,10 @@ Version: 1.0
         order: -1;
       }
 
+      .main-b-banner__title {
+        font-size: 1.95rem;
+      }
+
       .second-bottom-banners {
         display: flex;
       }
@@ -2051,7 +2058,22 @@ Version: 1.0
       }
 
       .second-b-banners__item:nth-child(1) {
-        background-position: 158% -60%;
+        background-position: 87% 2rem;
+      }
+
+      .second-b-banners__item:nth-child(2) {
+        background-position: 0rem 1.5rem;
+      }
+
+      .main-b-banner__btn, 
+      .second-b-banners__btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+      }
+
+      .main-b-banner__btn {
+        width: 50%;
       }
   }
 
@@ -2087,6 +2109,10 @@ Version: 1.0
 
       .q-view-popup__btn {
         padding: 1em 1em 0.8em 1em;
+      }
+
+      .second-bottom-banners {
+        flex-direction: column;
       }
   }
 
@@ -2139,12 +2165,8 @@ Version: 1.0
       }
 
       .main-bottom-banner {
-        padding-bottom: 1rem;
-      }
-
-      .second-bottom-banners {
-        flex-direction: column;
-      }
+        padding-bottom: 4rem;
+      }      
 
       .latest-news__img {
         margin-left: auto;
@@ -2196,6 +2218,19 @@ Version: 1.0
       .main-banner__image {
         width: 70%;
       }
+
+      .second-b-banners__item:nth-child(1) {
+        background-position-x: 148%;
+      }
+
+      .second-b-banners__item:nth-child(2) {
+        background-position: -5rem 2rem;
+      }
+
+      .main-b-banner__btn {
+        bottom: -20%;
+      }
+      
     }
 
   @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -2261,6 +2296,24 @@ Version: 1.0
       .popular-prods__item {
         flex: 0 0 100%;
         max-width: 100%;
+      }
+
+      .second-b-banners__category,
+      .second-b-banners__title,
+      .second-b-banners__item .item__price-list {
+        position: relative;
+        z-index: 1;
+      }
+
+      .second-b-banners__item::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
       }      
   }
 
