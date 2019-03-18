@@ -1540,6 +1540,7 @@ Version: 1.0
           bottom: 12%;
           margin-left: auto;
           margin-right: 1.5rem;
+          background-color: rgba(0, 0, 0, 0.5);
         }
 
         .second-b-banners__item:first-of-type .second-b-banners__btn {
