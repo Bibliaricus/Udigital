@@ -201,6 +201,7 @@ Version: 1.0
   }
 
   div.fancy-select ul.options li {
+    position: relative;
     padding: 5px 30px;
     color: #fff;
     cursor: pointer;
@@ -213,8 +214,14 @@ Version: 1.0
     -o-transition: all 150ms ease-out;
   }
 
-  div.fancy-select ul.options li.selected {
-    color: rgba(255,255,255,0.75);
+  div.fancy-select ul.options li.selected::before {
+    content: "\e910";
+    font-family: 'Udigital-icon-font';
+    font-size: 10px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   div.fancy-select ul.options li.hover {
