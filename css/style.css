@@ -181,8 +181,7 @@ Version: 1.0
   }
 
   div.fancy-select ul.options.overflowing {
-    top: auto;
-    bottom: 40px;
+    top: 50px;
 
     transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
     -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
@@ -192,8 +191,7 @@ Version: 1.0
   }
 
   div.fancy-select ul.options.overflowing.open {
-    top: auto;
-    bottom: 50px;
+    top: 50px;
 
     transition: opacity 300ms ease-out, bottom 300ms ease-out;
     -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
