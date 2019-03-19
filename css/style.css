@@ -83,7 +83,7 @@ Version: 1.0
 
   div.fancy-select div.trigger {
     display: block;
-    padding: 1rem 4rem 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     border-radius: 0;
     cursor: pointer;
     font-size: 0.75rem;
@@ -2496,6 +2496,10 @@ Version: 1.0
         width: 50%;
         padding: 1rem 0.5rem;
       }
+
+      div.fancy-select {
+        max-width: 140px;
+      }
   }
 
   @media only screen  and (max-width: 480px) {
@@ -2633,7 +2637,23 @@ Version: 1.0
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
-      }      
+      }
+      
+      .search__input {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: -1px;
+        margin-right: 0;
+      }
+
+      div.fancy-select {
+        max-width: 80%;
+      }
+
+      .search__button {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
   }
 
   /* Just for dev responsive */
