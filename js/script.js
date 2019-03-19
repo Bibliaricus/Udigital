@@ -139,3 +139,6 @@ $(document).ready(function(){
       div.removeClass('off-canvas-open');
     } 
   });
+
+  // FancySelect for stylizing selects
+  $('.search__select').fancySelect();
