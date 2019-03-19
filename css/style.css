@@ -312,6 +312,9 @@ Version: 1.0
     line-height: 1;
   }
   
+  .icon-font-check-mark:before {
+    content: "\e910";
+  }
   .icon-font-bag:before {
     content: "\e907";
   }
