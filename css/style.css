@@ -1716,6 +1716,23 @@ Version: 1.0
           background-position: -4rem 3rem;
         }
 
+        .second-b-banners__category,
+        .second-b-banners__title,
+        .main-b-banner__title {
+          display: block;
+          transition: .3s ease;
+        }
+
+        .second-b-banners__category:hover,
+        .second-b-banners__category:focus,
+        .second-b-banners__title:hover,
+        .second-b-banners__title:focus,
+        .main-b-banner__title:hover,
+        .main-b-banner__title:focus {
+          color: initial;
+          text-decoration: none;
+        }
+
         .second-b-banners__title {
           font-size: 1.25rem;
           letter-spacing: 0.025rem;
@@ -1788,7 +1805,7 @@ Version: 1.0
         }  
 
         .main-b-banner__btn {
-          bottom: -25%;
+          bottom: -20%;
           margin-left: auto;
           margin-right: auto;
         }
@@ -2528,6 +2545,10 @@ Version: 1.0
 
       .main-banner__dot-list {
         bottom: -1%;
+      }
+
+      .main-b-banner__btn {
+        bottom: -20%;
       }
   }
 
