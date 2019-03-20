@@ -538,6 +538,7 @@ Version: 1.0
   .item__title {
     color: #1c1a19;
     letter-spacing: 0.02rem;
+    transition: .3s ease;
   }
 
   .icon-font-star-solid {
@@ -726,7 +727,7 @@ Version: 1.0
   /* 4.#. Hover buttons */
   .hover-buttons__list {
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 0;
     right: 0;
     display: flex;
@@ -1654,6 +1655,11 @@ Version: 1.0
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+
+      .popular-prods__item:hover .item__title {
+        color: var(--main-blue);
+        text-decoration: none;
       }
 
       .popular-prods__img {
