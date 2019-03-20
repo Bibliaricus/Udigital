@@ -1262,7 +1262,10 @@ Version: 1.0
     .main-banner__text {
       width: 47%;
       vertical-align: middle;
-      margin-left: 3%;
+      margin-left: 7%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     } 
 
     .main-banner__text .animated {
@@ -2136,7 +2139,7 @@ Version: 1.0
       }
 
       .main-banner__text {
-        width: 50%;
+        width: 45%;
       }
 
       .main-banner__image {
@@ -2198,6 +2201,10 @@ Version: 1.0
 
       .off-canvas-open {
         max-width: 40vw;
+      }
+
+      .main-banner__slide {
+        padding: 4rem 0rem 3rem;
       }
   }
 
@@ -2417,7 +2424,7 @@ Version: 1.0
       }
 
       .main-banner__title {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
       }
 
       .section-title {
@@ -2502,6 +2509,10 @@ Version: 1.0
       .header-top__number-line {
         display: none;
       }
+
+      .main-banner__dot-list {
+        bottom: -1%;
+      }
   }
 
   @media only screen  and (max-width: 480px) {
@@ -2515,6 +2526,7 @@ Version: 1.0
 
       .main-banner__slide {
         padding: 2.5rem 0rem 3rem;
+        text-align: center;
       }
 
       .main-banner__dot-list {
@@ -2530,10 +2542,12 @@ Version: 1.0
         right: 0;
         height: 100%;
         padding: 2rem;
+        margin-left: 0;
       }
 
       .main-banner__image {
         width: 70%;
+        animation: none;
       }
 
       .second-b-banners__item:nth-child(1) {
