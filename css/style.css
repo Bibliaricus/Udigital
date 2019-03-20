@@ -2032,21 +2032,21 @@ Version: 1.0
   }
 
   .footer__logo {
-    margin-bottom: 5.4rem;
+    margin-bottom: calc(2.5vw + 10px);
   }
 
-  .footer__text {
+  footer p {
     font-size: 15px;
-    margin-bottom: 5rem;
+    margin-bottom: calc(2.5vw + 10px);
   }
 
-  .footer__separator {
-    background-color: var(--main-gray);
+  footer hr {
+    background-color: #8686866e;
   }
 
   .footer__bottom {
     text-align: initial;
-    margin-top: 3.5rem;
+    margin-top: calc(3vw + 15px);
   }
 
   .footer-links__title {
@@ -2093,7 +2093,7 @@ Version: 1.0
 
   .footer__input {
     background-color: transparent;
-    border: 1px solid var(--main-gray);
+    border: 1px solid #8686866e;
     padding: 0.7rem 1.3rem;
     color: #fff;
     border-right: none;
@@ -2101,7 +2101,7 @@ Version: 1.0
 
   .footer__button {
     background-color: transparent;
-    border: 1px solid var(--main-gray);
+    border: 1px solid #8686866e;
     padding: 0.7rem 1.1rem;
     color: #fff;
     margin-left: -3px;
@@ -2109,7 +2109,7 @@ Version: 1.0
 
   .footer-icons-list__item {
     display: inline-block;
-    border: 1px solid var(--main-gray);
+    border: 1px solid #8686866e;
     padding: 0.7rem 1.1rem;
     margin-right: 0.7rem;
   }
@@ -2204,7 +2204,6 @@ Version: 1.0
         flex-direction: column;
         align-items: center;
         margin-top: 2rem;
-        margin-bottom: 3rem;
       }
 
       .footer__subscribe {
