@@ -2206,6 +2206,15 @@ Version: 1.0
       .main-banner__slide {
         padding: 4rem 0rem 3rem;
       }
+
+      .top-banners__second-banner {
+        margin: 0;
+      }
+
+      .top-banners__second-banner:first-of-type {
+        margin-bottom: 0;
+        margin-right: -1px;
+      }
   }
 
   @media only screen and (max-width: 991.98px){
@@ -2371,8 +2380,9 @@ Version: 1.0
         flex-wrap: wrap;
       }
 
-      .top-banners__second-banner:nth-child(1) {
+      .top-banners__second-banner:first-of-type {
         margin-bottom: -1px;
+        margin-right: 0;
       }
 
       .prod-categories .nav {
