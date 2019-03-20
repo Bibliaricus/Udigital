@@ -726,7 +726,7 @@ Version: 1.0
   /* 4.#. Hover buttons */
   .hover-buttons__list {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 0;
     right: 0;
     display: flex;
@@ -758,7 +758,7 @@ Version: 1.0
     outline: none;    
   }
 
-  .prod-categories__img:hover ~ .hover-buttons__list,
+  .prod-categories__item:hover .hover-buttons__list,
   .prod-categories__img:focus ~ .hover-buttons__list,
   .hov-btn-call:hover ~ .hover-buttons__list,
   .hov-btn-call:focus ~ .hover-buttons__list,
@@ -1602,7 +1602,7 @@ Version: 1.0
     /* 6.4.2. Content */
       /* 6.4.2.1. Product categories */
       .prod-categories {
-        margin-bottom: 7.1rem;
+        margin-bottom: 4rem;
       }
 
       .prod-categories__tab.active {
@@ -1615,7 +1615,7 @@ Version: 1.0
       }
 
       #categories-tabs {
-        margin-bottom: 3.9rem;
+        margin-bottom: 1rem;
       }
 
       .prod-categories__title {
@@ -1639,7 +1639,7 @@ Version: 1.0
         margin-bottom: -1px;
       }
 
-      .prod-categories__title:hover,
+      .prod-categories__item:hover .prod-categories__title,
       .prod-categories__title:focus {
         color: var(--main-blue);
         text-decoration: none;
