@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="test"></div>
   <!-- Modals (located this, becouse it recommended by authors Bootstrap 4. If I understood correctly.) -->
   <div class="modal fade" id="q-view-popup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -82,7 +81,7 @@
     <div class="header-top row px-3">
       <div class="header-top__left col-xl-4 col-9 col-sm-10 d-flex align-items-center pl-2 pl-sm-4">
         <div class="dropdown header-top__language-list">
-          <button class="dropdown-toggle header-top__language-button header-top__language-link lang-en pr-2" id="language-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</button>
+          <button class="dropdown-toggle header-top__language-button header-top__language-link lang-en pr-2" id="language-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Choose your language">English</button>
           <div class="dropdown-menu" aria-labelledby="language-dropdown-button">
             <a href="#" class="dropdown-item header-top__language-link lang-en">English</a>
             <a href="#" class="dropdown-item header-top__language-link lang-fr">French</a>
@@ -92,7 +91,7 @@
           </div>
         </div>
         <div class="dropdown header-top__currency-list">
-          <button class="dropdown-toggle header-top__currency-button pl-3 mr-2" id="currency-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eur / €</button>
+          <button class="dropdown-toggle header-top__currency-button pl-3 mr-2" id="currency-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Choose desired currency">Eur / €</button>
           <div class="dropdown-menu" aria-labelledby="currency-dropdown-button">
             <a href="#" class="dropdown-item header-top__currency-link">Eur / €</a>
             <a href="#" class="dropdown-item header-top__currency-link">Gbp / £</a>
@@ -159,9 +158,8 @@
         </form>
       </div>
       <div class="header-bottom__icons-list d-flex justify-content-end align-items-center col-6 col-lg-3">
-        <a href="#" class="header-bottom__icon-item icon-font-heart-regular" onclick="openNav()"></a>
+        <a href="#" class="header-bottom__icon-item icon-font-heart-regular" onclick="openNav()" title="Open vish list"></a>
         <div class="vish-list sidenav" id="vish-list-off-canvas">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="vish-list__header">
             <span class="vish-list__title">Wishlist</span>
           </div>
@@ -177,10 +175,10 @@
           <div class="vish-list__footer">              
             <a href="#" class="vish-list__vish-list-button vish-list__btn">Viev wishlist</a>
           </div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </div>
-        <a href="#" class="header-bottom__icon-item icon-font-bag" onclick="openNav2()"></a>
-        <div class="shoping-cart sidenav" id="shoping-cart-off-canvas">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <a href="#" class="header-bottom__icon-item icon-font-bag" onclick="openNav2()" title="Open shopping cart"></a>
+        <div class="shoping-cart sidenav" id="shoping-cart-off-canvas">          
           <div class="shopping-cart__item-list">
             <div class="shopping-cart__item">
               <img src="img/product_image-2.jpg" alt="Description of product" class="shopping-cart__item-image" width="50" height="50">
@@ -217,6 +215,7 @@
             </div>
             <a href="#" class="shopping-cart__checkout-button shopping-cart__btn">Checkout</a>
           </div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
         </div>
         <span class="header-bottom__total-price" title="Total price">$259.99</span>
       </div>

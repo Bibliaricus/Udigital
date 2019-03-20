@@ -75,7 +75,7 @@ Version: 1.0
   }
 
   div.fancy-select select:focus + div.trigger {
-    box-shadow: 0 0 0 1px #ced4da;
+    border-color: #80bdff;
   }
 
   div.fancy-select select:focus + div.trigger.open {
@@ -119,7 +119,6 @@ Version: 1.0
   }
 
   div.fancy-select div.trigger.open {
-    background: #ced4da;
     color: #7A8498;
   }
 
@@ -234,11 +233,23 @@ Version: 1.0
 
   /* Body */
   :root {
-    --main-gray: #a4a4a4;
+    --main-gray: #e6e6e6;
     --main-blue: #12b9f0;
     --second-blue: #b0ebff;
     --main-red: #e74948;
-  }  
+  }
+
+  * {
+    outline: none !important;
+  }
+
+  *:not(button):focus {
+    text-decoration: underline;
+  }
+
+  .nav-link:focus {
+    text-decoration: underline;
+  }
 
   /* Fonts */
   
@@ -786,6 +797,11 @@ Version: 1.0
     z-index: 1;
   }  
 
+  .sidenav .closebtn:hover,
+  .sidenav .closebtn:focus {
+    color: var(--main-blue);
+  }
+
   .off-canvas-open {
     max-width: 30vw;
     padding: 60px 3rem 0.5rem 1.5rem;
@@ -1161,12 +1177,21 @@ Version: 1.0
       font-size: 16px;
     }
 
-    .search__button,
-    .search__button:hover {
+    .search__button {
       background-color: #262525;
       color: #ffffff;
       border-radius: 0;
       padding: 0.7rem 1rem;
+      border: 1px solid transparent;
+      margin-left: -1px;
+    }
+
+    .search__button:focus,
+    .search__button:hover {
+      box-shadow: none;
+      color: var(--main-blue);
+      background: #fff;
+      border-color: #ced4da;
     }
 
     .header-bottom__icons-list {
@@ -1177,10 +1202,13 @@ Version: 1.0
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       font-size: 1.375rem;
+      transition: .3s ease;
     }
 
-    .header-bottom__icon-item:hover {
+    .header-bottom__icon-item:hover,
+    .header-bottom__icon-item:focus {
       text-decoration: none;
+      color: var(--main-blue);
     }
 
     .vish-list-popup:hover::before,
@@ -1287,7 +1315,7 @@ Version: 1.0
     }
     
     .top-banners__second-banner {
-      border: 1px solid #a4a4a4;
+      border: 1px solid #dcdcdc;
       margin-bottom: -1px;
       padding-bottom: 1px;
     }
@@ -1580,6 +1608,7 @@ Version: 1.0
         border: 1px solid var(--main-gray);
         padding-bottom: 1.1rem;
         margin-left: -1px;
+        margin-bottom: -1px;
       }
 
       .prod-categories__title:hover,
@@ -2557,6 +2586,10 @@ Version: 1.0
 
       .off-canvas-open {
         max-width: 70vw;
+      }
+
+      .header-top__number-line {
+        display: none;
       }
   }
 
