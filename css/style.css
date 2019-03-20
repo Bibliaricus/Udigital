@@ -1260,6 +1260,14 @@ Version: 1.0
       width: 45%;
       vertical-align: middle;
     } 
+
+    .main-banner__text .animated {
+      animation-duration: 1.5s;
+    }
+
+    .main-banner__slide:nth-of-type(4) .main-banner__text .animated {
+      animation-duration: 1s;
+    }
     
     .main-banner__category,
     .main-banner__description {
@@ -1270,6 +1278,18 @@ Version: 1.0
       color: #ffffff;
       font-size: 5rem;
       letter-spacing: 0.1rem;
+
+    }
+    
+    .main-banner__title,
+    .main-banner__btn {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;      
+    }
+
+    .main-banner__description {
+      -webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s;
     }
 
     .main-banner__btn:hover {
